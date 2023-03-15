@@ -1,3 +1,9 @@
+#unfloated-container{
+  width: 1000px;
+}
+body{ margin:0 auto;
+background-color: bisque; }
+
 .Image {
   width: 50%;
   border-radius: 1000px;
@@ -65,9 +71,7 @@ h2,.heading {
   border-radius: 10000px;
   border: solid 2px black;
 }
-body {
-  background-color: bisque;
-}
+
 .moitreyatext {
   position: relative;
   top: 20px;
@@ -97,8 +101,8 @@ body {
   position: relative;
   width: 20%;
   border-radius: 150px;
-  height: 30%;
   border: solid 2px black;
+  height: 30%;
 }
 .marveltext {
   text-align: right;
@@ -112,7 +116,7 @@ body {
   justify-content: center;
 }
 .item{
- border: 1px solid rosybrown;
+  border: 1px solid rosybrown;
   background-color: darkturquoise;
   margin: 10px;
   padding: 5px;
