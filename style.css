@@ -98,6 +98,7 @@ body {
   width: 20%;
   border-radius: 150px;
   height: 30%;
+  border: solid 2px black;
 }
 .marveltext {
   text-align: right;
@@ -110,7 +111,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.items{
+.item{
   border: 1px solid rosybrown;
   margin: 10px;
 }
