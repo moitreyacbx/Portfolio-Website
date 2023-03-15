@@ -112,6 +112,8 @@ body {
   justify-content: center;
 }
 .item{
-  border: 1px solid rosybrown;
+ border: 1px solid rosybrown;
+  background-color: darkturquoise;
   margin: 10px;
+  padding: 5px;
 }
