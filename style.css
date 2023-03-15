@@ -1,0 +1,36 @@
+.Image {
+  width: 50%;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.title {
+  background-color: mediumpurple;
+  color: cyan;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  margin: 10px;
+  border-radius: 100px;
+}
+.Navigation {
+  color: rgb(8, 77, 206);
+  background-color: darkturquoise;
+  border-radius: 5px;
+}
+.content,
+.Navigation,
+.title,
+.Image {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 12px;
+}
+.content {
+  font-size: large;
+  text-decoration: overline;
+}
+.legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
