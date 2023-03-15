@@ -4,7 +4,7 @@
   display: block;
   margin: 0 auto;
 }
-.title {
+.title{
   background-color: mediumpurple;
   color: cyan;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -12,29 +12,104 @@
   margin: 10px;
   border-radius: 100px;
 }
+.topheading{
+  background-color: rgb(2, 2, 2);
+  text-decoration: none;
+  color:antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  margin: 10px;
+  border-radius: 50px;
+}
 .Navigation {
+
   color: rgb(8, 77, 206);
   background-color: darkturquoise;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-.content,
-.Navigation,
+
+h2,.Navigation,
 .title,
-.Image {
+.Image,
+.heading{
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
   padding: 12px;
 }
-.content {
-  font-size: large;
+h2,.heading {
+  font-size: larger;
   text-decoration: overline;
+  font-size: medium;
+  top: 30px;
+}
+.moitreya-text{
+  font-size: large;
+  text-decoration:wavy;
+  font-size: medium;
+  top: 30px;
 }
 .legend {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
 }
-body {
-background-color: lightsteelblue;
+.Message {
+  text-align: center;
+  border: solid 3px black;
+  border-width: 5px;
+  border-radius: 0%;
+}
+.buttons{
+  display: block;
+  margin: 0 auto;
+}
+.Moitreya{
+  display: flex;
+  float: left;
+  position: relative;
+  width: 19%;
+  border-radius: 10000px;
+}
+body{
+  background-color:bisque;
+}
+.moitreya-text{
+  
+  position: relative;
+  top: 20px;
+  box-sizing: border-box;
+  left: 10px;
+  z-index: -1;
+}
+.heading{
+  
+ font-size: xx-large;
+ position: relative;
+ text-decoration: underline;
+ right: 300px;
+ z-index: -1;
+}
+.heading2{
+  
+  font-size: xx-large;
+  position: relative;
+  align-content: center;
+  text-decoration: underline;
+  left: 330px;
+  z-index: -1;
+ }
+.Marvelbeatbox{
+  display: flex;
+  float: right;
+  position: relative;
+  width: 20%;
+  border-radius: 150px;
+  height: 30%;
+}
+.marveltext
+{
+  text-align: right;
+  top: 20px;
+  z-index: -1;
 
 }
