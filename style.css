@@ -1,8 +1,10 @@
-#unfloated-container{
+#unfloated-container {
   width: 1000px;
 }
-body{ margin:0 auto;
-background-color: bisque; }
+body {
+  margin: 0 auto;
+  background-color: bisque;
+}
 
 .Image {
   width: 50%;
@@ -33,21 +35,25 @@ background-color: bisque; }
   background-color: darkturquoise;
   border-radius: 100px;
 }
-h2,.Navigation,.title,.Image,
+h2,
+.Navigation,
+.title,
+.Image,
 .heading {
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
   padding: 12px;
 }
-h2,.heading {
+h2,
+.heading {
   font-size: larger;
   text-decoration: overline;
   font-size: medium;
   top: 30px;
 }
 .legend {
-  font-family:initial;
+  font-family: initial;
   font-weight: bolder;
 }
 .Message {
@@ -84,7 +90,7 @@ h2,.heading {
   font-size: xx-large;
   position: relative;
   text-decoration: underline;
-  right: 300px;
+  right: 100px;
   z-index: -1;
 }
 .heading2 {
@@ -92,7 +98,7 @@ h2,.heading {
   position: relative;
   align-content: center;
   text-decoration: underline;
-  left: 330px;
+  left: 100px;
   z-index: -1;
 }
 .Marvelbeatbox {
@@ -109,15 +115,16 @@ h2,.heading {
   top: 20px;
   z-index: -1;
 }
-.container{
+.container {
   background-color: cornsilk;
   border: solid 2px black;
   display: flex;
   justify-content: center;
 }
-.item{
+.item {
   border: 1px solid rosybrown;
   background-color: darkturquoise;
   margin: 10px;
   padding: 5px;
 }
+
