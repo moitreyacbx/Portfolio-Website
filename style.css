@@ -128,8 +128,8 @@ h2 {
 
 .moitreyatext {
   position: relative;
-  z-index: 1;
-  margin-left: 220px;
+  z-index: -1;
+  margin-left: 250px;
 }
 .heading {
   font-size: xx-large;
