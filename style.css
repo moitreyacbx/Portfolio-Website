@@ -1,18 +1,17 @@
-#unfloated-container {
-  width: 1000px;
-}
+
 body {
-  background-color: #8EC5FC;
+  
 background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw);
 
 }
 
 .Image {
-  width: 50%;
+  width: 25rem;
   border-radius: 1000px;
   display: block;
   margin: 0 auto;
-  border: solid 5px black;
+  border: solid 5px rgb(22, 7, 7);
+  object-fit: cover;
   animation: bounce-in-bck 0.9s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1s backwards;
   
 }
@@ -52,6 +51,17 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
     animation-timing-function: ease-out;
   }
 }
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+
 .title {
   background: rgb(153,224,228);
 background: linear-gradient(90deg, rgba(153,224,228,0.24239308300504603) 0%, rgba(255,255,255,0.469021978189182) 41%, rgba(85,255,235,1) 95%);
@@ -164,13 +174,20 @@ h2 {
   font-weight: bolder;
   text-transform: capitalize;
 }
-
+.buttons:hover {
+  animation: shadow-pop-tr 0.5s ease-in-out forwards;
+  
+}
 .Moitreyaimg {
   
   float: left;
   width: 15rem;
   border-radius: 10000px;
-  border: solid 2px black;
+  border: solid 5px black;
+}
+.Moitreyaimg:hover {
+  animation: shadow-pop-tr 0.5s ease-in-out forwards;
+  
 }
 
 .moitreyatext {
@@ -208,8 +225,12 @@ text-transform: none;
   position: relative;
   width: 15rem;
   border-radius: 150px;
-  border: solid 2px black;
+  border: solid 5px black;
   height: 30%;
+}
+.Marvelbeatbox:hover {
+  animation: shadow-pop-tr 0.5s ease-in-out forwards;
+  
 }
 .marveltext {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -228,15 +249,22 @@ text-transform: none;
 }
 .container {
   background-color: whitesmoke;
-  border: solid 2px black;
+  border: solid 5px black;
   display: flex;
   justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem; 
 
 }
 .item {
   text-align: center;
   text-decoration: wavy;
-  padding: 5px;
+  margin: 0 10px 0 10px;
+  border: solid 5px rgb(22, 7, 7);
+  border-radius: 100rem;
+  
+}
+.item:hover {
+  animation: shadow-pop-tr 0.5s ease-in-out forwards;
   
 }
   @keyframes color-change-3x {
@@ -273,7 +301,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   border: solid 5px black;
   border-radius: 10000px !important;
   animation-name: hovering;
-  animation-duration: 2s;
+  animation-duration: 30s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
