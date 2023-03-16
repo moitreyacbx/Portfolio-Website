@@ -11,14 +11,14 @@ body {
   border-radius: 1000px;
   display: block;
   margin: 0 auto;
-  border: solid 10px black;
+  border: solid 5px black;
 }
 .title {
-  background-color: mediumpurple;
-  color: cyan;
+  background-color:lavender;
+  color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
   margin: 10px;
+  border: solid 5px black;
   border-radius: 0px;
 }
 .topheading {
@@ -31,22 +31,21 @@ body {
   border-radius: 50px;
 }
 .Navigation {
-  color: rgb(8, 77, 206);
-  background-color: darkturquoise;
-  border-radius: 100px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(8, 77, 206);
+  border-radius: 200px;
 }
 h2,
 .Navigation,
 .title,
-.Image,
-.heading {
+.Image
+ {
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
   padding: 12px;
 }
-h2,
-.heading {
+h2 {
   font-size: larger;
   text-decoration: overline;
   font-size: medium;
@@ -64,15 +63,23 @@ h2,
   border-width: 7px;
   background-color: antiquewhite;
 }
+.Message2 {
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: underline;
+  border-width: 7px;
+
+}
 .buttons {
   display: block;
   margin: 0 auto;
-  background-color: crimson;
+  background-color:cornflowerblue;
 }
-.Moitreya {
-  display: flex;
+
+.Moitreyaimg {
+  
   float: left;
-  position: relative;
   width: 19%;
   border-radius: 10000px;
   border: solid 2px black;
@@ -80,29 +87,25 @@ h2,
 
 .moitreyatext {
   position: relative;
-  top: 20px;
-  box-sizing: border-box;
-  left: 10px;
   z-index: 1;
-  left: 20px;
+  margin-left: 220px;
 }
 .heading {
   font-size: xx-large;
-  position: relative;
   text-decoration: underline;
-  right: 100px;
+  text-align: left;
   z-index: -1;
+  right: 320px;
 }
 .heading2 {
   font-size: xx-large;
-  position: relative;
-  align-content: center;
+  text-align: center;
   text-decoration: underline;
-  left: 100px;
   z-index: -1;
+  display: flex;
+  justify-content: end;
 }
 .Marvelbeatbox {
-  display: flex;
   float: right;
   position: relative;
   width: 20%;
@@ -116,15 +119,27 @@ h2,
   z-index: -1;
 }
 .container {
-  background-color: cornsilk;
+  background-color: whitesmoke;
   border: solid 2px black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .item {
-  border: 1px solid rosybrown;
-  background-color: darkturquoise;
-  margin: 10px;
+  text-align: center;
+  text-decoration: wavy;
   padding: 5px;
 }
-
+.img4{
+  width: 30%;
+}
+.container-nav{
+  background-color: whitesmoke;
+  border: solid 2px black;
+  display: flex;
+  justify-content: space-between;
+}
+.item-nav{
+  text-align: center;
+  text-decoration: wavy;
+  padding: 5px;
+}
