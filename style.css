@@ -80,7 +80,7 @@ h2 {
 .Moitreyaimg {
   
   float: left;
-  width: 19%;
+  width: 15rem;
   border-radius: 10000px;
   border: solid 2px black;
 }
@@ -108,7 +108,7 @@ h2 {
 .Marvelbeatbox {
   float: right;
   position: relative;
-  width: 20%;
+  width: 15rem;
   border-radius: 150px;
   border: solid 2px black;
   height: 30%;
