@@ -13,6 +13,44 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
   display: block;
   margin: 0 auto;
   border: solid 5px black;
+  animation: bounce-in-bck 0.9s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1s backwards;
+  
+}
+@keyframes bounce-in-bck {
+  0% {
+    transform: scale(7);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(1.5);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: scale(1.24);
+    animation-timing-function: ease-in;
+  }
+  89% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(1.04);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
 }
 .title {
   background: rgb(153,224,228);
@@ -31,6 +69,7 @@ text-decoration: none solid rgb(68, 68, 68);
 font-style: italic;
 font-variant: small-caps;
 text-transform: capitalize;
+animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 
   
 }
@@ -42,6 +81,7 @@ text-transform: capitalize;
   font-style: oblique;
   margin: 10px;
   border-radius: 50px;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) alternate;
 }
 .Navigation {
   color: rgb(0, 0, 0);
@@ -92,7 +132,7 @@ h2 {
   font-style: italic;
   font-variant: small-caps;
   text-transform: capitalize;
-    
+  animation: color-change-3x 4s linear infinite alternate both;
 }
 .Message2 {
   display: inline;
@@ -117,7 +157,12 @@ h2 {
 .buttons {
   display: block;
   margin: 0 auto;
+  width: 100px;
   background-color:cornflowerblue;
+  animation: color-change-3x 4s linear infinite alternate-reverse;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-transform: capitalize;
 }
 
 .Moitreyaimg {
@@ -186,12 +231,25 @@ text-transform: none;
   border: solid 2px black;
   display: flex;
   justify-content: space-between;
+
 }
 .item {
   text-align: center;
   text-decoration: wavy;
   padding: 5px;
+  
 }
+  @keyframes color-change-3x {
+    0% {
+      background: #19dcea;
+    }
+    50% {
+      background: #b22cff;
+    }
+    100% {
+      background: #ea2222;
+    }
+  }
 
 
 .img4{
@@ -226,4 +284,16 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     width: 0px;
   }
   
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
