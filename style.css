@@ -3,7 +3,7 @@
 }
 body {
   background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw);
 
 }
 
@@ -31,6 +31,7 @@ text-decoration: none solid rgb(68, 68, 68);
 font-style: italic;
 font-variant: small-caps;
 text-transform: capitalize;
+
   
 }
 .topheading {
@@ -94,7 +95,7 @@ h2 {
     
 }
 .Message2 {
-  text-align: center;
+  display: inline;
   font-size: larger;
   font-weight: bolder;
   text-decoration: underline;
@@ -109,6 +110,7 @@ h2 {
   font-style: italic;
   font-variant: small-caps;
   text-transform: capitalize;
+
     
 
 }
@@ -127,9 +129,19 @@ h2 {
 }
 
 .moitreyatext {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size: 20px;
+letter-spacing: -1.4px;
+word-spacing: 2px;
+color: #172C5D;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
   position: relative;
   z-index: -1;
-  margin-left: 270px;
+  margin-left: 250px;
 }
 .heading {
   font-size: xx-large;
@@ -155,6 +167,16 @@ h2 {
   height: 30%;
 }
 .marveltext {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size: 20px;
+letter-spacing: -1.4px;
+word-spacing: 2px;
+color: #172C5D;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: small-caps;
+text-transform: none;
   text-align: right;
   top: 20px;
   z-index: -1;
@@ -170,12 +192,15 @@ h2 {
   text-decoration: wavy;
   padding: 5px;
 }
+
+
 .img4{
   width: 30%;
 }
 .container-nav{
   background-color: whitesmoke;
-  border: solid 2px black;
+  border: solid 5px black;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
 }
@@ -183,4 +208,22 @@ h2 {
   text-align: center;
   text-decoration: wavy;
   padding: 5px;
+}
+.item-nav:hover{
+  background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  border: solid 5px black;
+  border-radius: 10000px !important;
+  animation-name: hovering;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes hovering {
+
+  100%{
+    width: 0px;
+  }
+  
 }
