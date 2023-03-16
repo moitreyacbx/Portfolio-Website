@@ -2,8 +2,9 @@
   width: 1000px;
 }
 body {
-  margin: 0 auto;
-  background-color: bisque;
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
 }
 
 .Image {
@@ -14,12 +15,23 @@ body {
   border: solid 5px black;
 }
 .title {
-  background-color:lavender;
+  background: rgb(153,224,228);
+background: linear-gradient(90deg, rgba(153,224,228,0.24239308300504603) 0%, rgba(255,255,255,0.469021978189182) 41%, rgba(85,255,235,1) 95%);
   color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 10px;
   border: solid 5px black;
   border-radius: 0px;
+  font-family: "Arial Black", Gadget, sans-serif;
+font-size: 25px;
+letter-spacing: -1.2px;
+word-spacing: -0.4px;
+color: #000000;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: small-caps;
+text-transform: capitalize;
+  
 }
 .topheading {
   background-color: rgb(2, 2, 2);
@@ -46,10 +58,17 @@ h2,
   padding: 12px;
 }
 h2 {
-  font-size: larger;
-  text-decoration: overline;
-  font-size: medium;
-  top: 30px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  letter-spacing: -1.2px;
+  word-spacing: -0.4px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: capitalize;
+    
 }
 .legend {
   font-family: initial;
@@ -62,6 +81,17 @@ h2 {
   border: solid 3px black;
   border-width: 7px;
   background-color: antiquewhite;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  letter-spacing: -1.2px;
+  word-spacing: -0.4px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: capitalize;
+    
 }
 .Message2 {
   text-align: center;
@@ -69,6 +99,17 @@ h2 {
   font-weight: bolder;
   text-decoration: underline;
   border-width: 7px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  letter-spacing: -1.2px;
+  word-spacing: -0.4px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: capitalize;
+    
 
 }
 .buttons {
