@@ -245,14 +245,11 @@ text-transform: none;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem; 
-
 }
 .item {
   text-align: center;
   text-decoration: wavy;
   border-radius: 100rem;
-  width: 120%;
-  
 }
 .item:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
@@ -278,6 +275,10 @@ text-transform: none;
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  word-spacing: 2px;
 }
 .item-nav{
   text-align: center;
@@ -312,4 +313,21 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   100% {
     opacity: 1;
   }
+}
+a{
+  text-decoration: none !important;
+  font: inherit !important;
+  color: #3e3e3e;
+}
+input{
+  width: 80% !important;
+  align-items: center;
+  height: 2.5rem !important;
+  font-size: x-large;
+
+}
+::placeholder{
+  text-align: center;
+  font-style: oblique;
+  font-size: x-large;
 }
