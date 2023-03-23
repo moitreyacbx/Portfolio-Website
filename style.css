@@ -334,16 +334,19 @@ a{
   width: 90% !important;
   align-items: center;
   font-size: x-large;
+  position: relative;
+  top: 0.6rem;
+  font-weight: bolder;
 }
-.MessageName{
-  width: 100% !important;
+#MessageName{
+  width: 50% !important;
   align-items: center;
-  font-size: x-large;
+  font-size: large;
+  font-weight: bolder;
 }
 ::placeholder{
   text-align: center;
   font-style: oblique;
   position: relative;
   font-stretch: extra-expanded;
-
 }
