@@ -1,333 +1,40 @@
-
-body {
-  
-background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw);
-
-}
 .Image {
-  width: 25rem;
-  border-radius: 1000px;
+  width: 50%;
+  border-radius: 100px;
   display: block;
   margin: 0 auto;
-  border: solid 5px rgb(22, 7, 7);
-  object-fit: cover;
-  animation: bounce-in-bck 0.9s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1s backwards;
-    
-}
-@keyframes bounce-in-bck {
-  0% {
-    transform: scale(7);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    transform: scale(1.5);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: scale(1.24);
-    animation-timing-function: ease-in;
-  }
-  89% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: scale(1.04);
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: scale(1);
-    animation-timing-function: ease-out;
-  }
-}
-@keyframes shadow-pop-tr {
-  0% {
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
-    transform: translateX(-8px) translateY(8px);
-  }
 }
 .title {
-  background: rgb(153,224,228);
-background: linear-gradient(90deg, rgba(153,224,228,0.24239308300504603) 0%, rgba(255,255,255,0.469021978189182) 41%, rgba(85,255,235,1) 95%);
-  color: black;
-  margin: 10px;
-  border: solid 5px black;
-  border-radius: 0px;
-  font-family: "Arial Black", Gadget, sans-serif;
-font-size: 25px;
-letter-spacing: -1.2px;
-word-spacing: -0.4px;
-color: #000000;
-font-weight: 700;
-text-decoration: none solid rgb(68, 68, 68);
-font-style: italic;
-font-variant: small-caps;
-text-transform: capitalize;
-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-
-  
-}
-.topheading {
-  background-color: rgb(2, 2, 2);
-  text-decoration: none;
-  color: antiquewhite;
+  background-color: mediumpurple;
+  color: cyan;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: oblique;
   margin: 10px;
-  border-radius: 50px;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) alternate;
+  border-radius: 100px;
 }
 .Navigation {
-  color: rgb(0, 0, 0);
-  background-color: rgb(8, 77, 206);
-  border-radius: 200px;
+  color: rgb(8, 77, 206);
+  background-color: darkturquoise;
+  border-radius: 5px;
 }
-h2,.Navigation,.title,.Image{
+.content,
+.Navigation,
+.title,
+.Image {
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
   padding: 12px;
 }
-h2 {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 25px;
-  letter-spacing: -1.2px;
-  word-spacing: -0.4px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: capitalize;
-    
+.content {
+  font-size: large;
+  text-decoration: overline;
 }
 .legend {
-  font-family: initial;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bolder;
 }
-.Message {
-  text-align: center;
-  font-size: larger;
-  font-weight: bolder;
-  border: solid 3px black;
-  border-width: 7px;
-  background-color: antiquewhite;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 25px;
-  letter-spacing: -1.2px;
-  word-spacing: -0.4px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: capitalize;
-  animation: color-change-3x 4s linear infinite alternate both;
-}
-.Message2 {
-  display: inline;
-  font-size: larger;
-  font-weight: bolder;
-  text-decoration: underline;
-  border-width: 7px;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 25px;
-  letter-spacing: -1.2px;
-  word-spacing: -0.4px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: capitalize;
+body {
+background-color: lightsteelblue;
 
-    
-
-}
-.buttons {
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  background-color:cornflowerblue;
-  animation: color-change-3x 4s linear infinite alternate-reverse;
-  font-family: sans-serif;
-  font-weight: bolder;
-  text-transform: capitalize;
-}
-.buttons:hover {
-  animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  
-}
-.Moitreyaimg {
-  
-  float: left;
-  width: 15rem;
-  border-radius: 10000px;
-  border: solid 5px black;
-}
-.Moitreyaimg:hover {
-  animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  
-}
-.moitreyatext {
-  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-font-size: 20px;
-letter-spacing: 1.4px;
-word-spacing: 2px;
-color: #172C5D;
-font-weight: 700;
-text-decoration: none;
-font-style: normal;
-font-variant: small-caps;
-text-transform: none;
-  position: relative;
-  z-index: -1;
-  margin-left: 250px;
-}
-.heading {
-  font-size: xx-large;
-  text-decoration: underline;
-  text-align: left;
-  z-index: -1;
-  right: 320px;
-}
-.heading2 {
-  font-size: xx-large;
-  text-align: center;
-  text-decoration: underline;
-  z-index: -1;
-  display: flex;
-  justify-content: end;
-}
-.Marvelbeatbox {
-  float: right;
-  position: relative;
-  width: 15rem;
-  border-radius: 150px;
-  border: solid 5px black;
-  height: 30%;
-}
-.Marvelbeatbox:hover {
-  animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  
-}
-.marveltext {
-  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-font-size: 20px;
-letter-spacing: 1.4px;
-word-spacing: 2px;
-color: #172C5D;
-font-weight: 700;
-text-decoration: none;
-font-style: normal;
-font-variant: small-caps;
-text-transform: none;
-  text-align: right;
-  top: 20px;
-  z-index: -1;
-}
-.container {
-  background-color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem; 
-}
-.item {
-  text-align: center;
-  text-decoration: wavy;
-  border-radius: 100rem;
-}
-.item:hover {
-  animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  border: solid 2px gray;
-  
-}
-  @keyframes color-change-3x {
-    0% {
-      background: #19dcea;
-    }
-    50% {
-      background: #b22cff;
-    }
-    100% {
-      background: #ea2222;
-    }
-  }
-.img4{
-  width: 30%;
-}
-.container-nav{
-  background-color: whitesmoke;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-  font-size: 20px;
-  letter-spacing: 1.4px;
-  word-spacing: 2px;
-}
-.item-nav{
-  text-align: center;
-  text-decoration: wavy;
-  padding: 5px;
-}
-.item-nav:hover{
-  background-color: #FBAB7E;
-background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-  border-radius: 10000rem !important;
-  animation-name: hovering;
-  animation-duration: 30s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-@keyframes hovering {
-
-  100%{
-    width: 0px;
-  }
-  
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-a{
-  text-decoration: none !important;
-  font: inherit !important;
-  color: #3e3e3e;
-}
-input{
-  width: 80% !important;
-  align-items: center;
-  height: 2.5rem !important;
-  font-size: x-large;
-
-}
-::placeholder{
-  text-align: center;
-  font-style: oblique;
-  font-size: x-large;
 }
