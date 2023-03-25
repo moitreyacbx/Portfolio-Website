@@ -78,9 +78,9 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .topheading {
-background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #666262, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #646060, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #000000;
+background: -webkit-linear-gradient(to right, #666262, #000000);  
+background: linear-gradient(to right, #646060, #000000); 
 text-decoration: none;
 color: antiquewhite;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -153,6 +153,28 @@ h2 {
   font-variant: small-caps;
   text-transform: capitalize;
   animation: color-change-3x 4s linear infinite alternate both;
+  text-shadow: "none";
+  
+}
+.Message3 {
+  display: grid;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  border: solid 3px black;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  letter-spacing: -1.2px;
+  word-spacing: -0.4px;
+  color: #231f1f;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  animation: color-change-3x 4s linear infinite alternate both;
+  text-shadow: "none";
+  
 }
 .Message2 {
   display: inline;
@@ -223,6 +245,7 @@ text-transform: none;
   z-index: -1;
   display: flex;
   justify-content: end;
+  color: "none";
 }
 .Marvelbeatbox {
   float: right;
@@ -256,6 +279,10 @@ text-transform: none;
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem; 
+  Font-family: monospace;
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  word-spacing: 2px;
 }
 .item {
   text-align: center;
@@ -353,17 +380,20 @@ a{
   font-stretch: extra-expanded;
 }
 .ceritem-container{
-  background-color: whitesmoke;
+  background-color: rgb(30, 29, 29);
   display: grid;
   grid-template:auto repeat(4,auto)/repeat(2,auto) repeat(2,auto);
+  grid-area: auto;
+  padding: 2px 2px 0 2px;
 }
 .ceritem{
   margin: solid 2px gold;
-  padding: 2px 2px 2px 2px;
 }
 .img5{
   width: 100%;
   height: 200px;
+  position: relative;
+  top:5px
 }
 .img6{
   width: 100%;
@@ -385,6 +415,8 @@ a{
   font-weight: bolder;
   text-transform: capitalize;
   font-size: x-large;
+  font-size: x-large;
+  border: solid 2px rgb(0, 0, 0);
 }
 #buttons-2{
   width: 150px;
@@ -394,4 +426,5 @@ a{
   text-transform: capitalize;
   color: whitesmoke;
   font-size: x-large;
+  border: solid 2px rgb(0, 0, 0);
 }
