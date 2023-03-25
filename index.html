@@ -9,6 +9,10 @@
   <body>  
     <h1 class="title">WELCOME TO MOITREYA'S WEBSITE</h1>
     <h2 class="topheading">Moitreya Chattopadhyay aka Marvel Beatbox</h2>
+    <div class="contbutt">
+    <button id="buttons-2" onclick="changemodelight()">Turn on Light Mode</button>
+    <button id="buttons-1" onclick="changemodedark()">Turn on Dark Mode</button>
+  </div>
     <img 
       class="Image" 
       src="WhatsApp Image 2023-03-17 at 03.13.37.jpg"
@@ -75,16 +79,16 @@
 <p>•Top 3 Beatboxers of Kolkata</p>
       </p>
     </ul>
-      </div>
     </div>
     <div id="Message">
       <p>Got A Message For Me?
       <textarea class="MessageHolder" id="Message2" placeholder="~Write Something Here~" inputmode="full-width-latin"></textarea>
       <input id="MessageName" placeholder="~Your Name~" inputmode="full-width-latin">
-      <button id="buttons" onclick="disptext()">Submit</button><p id="prompt"></p>
+      <button id="buttons" onclick="disptext()">Submit</button>
+      <br>
+      <p id="prompt"></p>
     </div>
     <script src="script1.js">
     </script>
   </body>
 </html>
-
