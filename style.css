@@ -380,7 +380,7 @@ a{
   font-stretch: extra-expanded;
 }
 .ceritem-container{
-  background-color: rgb(30, 29, 29);
+  background-color: rgb(37, 35, 35);
   display: grid;
   grid-template:auto repeat(4,auto)/repeat(2,auto) repeat(2,auto);
   grid-area: auto;
