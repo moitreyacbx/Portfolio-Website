@@ -401,4 +401,5 @@ a {
   text-transform: capitalize;
   color: whitesmoke;
   font-size: x-large;
+  border: solid 2px white;
 }
