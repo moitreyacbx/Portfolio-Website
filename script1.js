@@ -70,5 +70,5 @@ function changemodelight(){
     const el14 = document.querySelector(".Marvelbeatbox");
     el14.style.border = "solid 3px black";
     const el15 = document.querySelector(".ceritem-container");
-    el15.style.backgroundColor = "rgb(30, 29, 29);";
+    el15.style.backgroundColor = "rgb(37, 35, 35)";
 }
