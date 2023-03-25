@@ -1,9 +1,4 @@
-@media only screen and (max-width:768px) {
-  [class*="col-"]{
-    width: 100%;
-  }
-  
-}
+
 body {
   
 background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw);
@@ -17,7 +12,8 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
   border: solid 5px rgb(22, 7, 7);
   object-fit: cover;
   animation: bounce-in-bck 0.9s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1s backwards;
-    
+  position: relative;
+  bottom: 20px;
 }
 @keyframes bounce-in-bck {
   0% {
@@ -66,35 +62,32 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
   }
 }
 .title {
-  background: rgb(153,224,228);
-background: linear-gradient(90deg, rgba(153,224,228,0.24239308300504603) 0%, rgba(255,255,255,0.469021978189182) 41%, rgba(85,255,235,1) 95%);
-  color: black;
-  margin: 10px;
-  border: solid 5px black;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  color: rgb(37, 35, 35);
+  border: solid 5px rgba(38, 36, 36, 0.607);
   border-radius: 0px;
   font-family: "Arial Black", Gadget, sans-serif;
-font-size: 25px;
-letter-spacing: -1.2px;
-word-spacing: -0.4px;
-color: #000000;
-font-weight: 700;
-text-decoration: none solid rgb(68, 68, 68);
-font-style: italic;
-font-variant: small-caps;
-text-transform: capitalize;
-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-
-  
+  font-size: 25px;
+  letter-spacing: -1.2px;
+  word-spacing: -0.4px;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: italic;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .topheading {
-  background-color: rgb(2, 2, 2);
-  text-decoration: none;
-  color: antiquewhite;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
-  margin: 10px;
-  border-radius: 50px;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) alternate;
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #666262, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #646060, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-decoration: none;
+color: antiquewhite;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: oblique;
+margin: 10px;
+border-radius: 50px;
+animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) alternate;
 }
 .Navigation {
   color: rgb(0, 0, 0);
@@ -177,7 +170,7 @@ h2 {
   font-variant: small-caps;
   text-transform: capitalize;
 }
-#buttons {
+#buttons{
   display: block;
   margin: 0 auto;
   justify-content: center;
@@ -195,14 +188,14 @@ h2 {
   float: left;
   width: 15rem;
   border-radius: 10000px;
-  border: solid 3px black;
+  border: solid 3px rgb(0, 0, 0);
 }
 .Moitreyaimg:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
   
 }
 .moitreyatext {
-  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
 font-size: 20px;
 letter-spacing: 1.4px;
 word-spacing: 2px;
@@ -244,7 +237,7 @@ text-transform: none;
   
 }
 .marveltext {
-  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
 font-size: 20px;
 letter-spacing: 1.4px;
 word-spacing: 2px;
@@ -366,6 +359,7 @@ a{
 }
 .ceritem{
   margin: solid 2px gold;
+  padding: 2px 2px 2px 2px;
 }
 .img5{
   width: 100%;
@@ -378,4 +372,26 @@ a{
 .grid-1{
   grid-row: span 2;
   grid-column: span 2;
+}
+.contbutt
+{
+  display: flex;
+  justify-content: space-between;
+}
+#buttons-1{
+  width: 150px;
+  background-color:silver;
+  font-family: monospace;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: x-large;
+}
+#buttons-2{
+  width: 150px;
+  background-color:rgb(24, 24, 24);
+  font-family: monospace;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: whitesmoke;
+  font-size: x-large;
 }
