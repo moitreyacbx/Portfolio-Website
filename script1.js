@@ -1,5 +1,5 @@
-let heading= document.body.children;
-heading[1].innerHTML = "Welcome to Moitreya's Portfolio Website";
+let headin= document.body.children;
+headin[1].innerHTML = "Welcome to Moitreya's Portfolio Website";
 function disptext(){
     const usernames = document.getElementById("MessageName").value;
     document.getElementById("prompt").innerHTML = "Thank you for your message," + usernames + "!";
