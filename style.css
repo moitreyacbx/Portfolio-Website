@@ -1,8 +1,5 @@
-
 body {
-  
-background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw);
-
+  background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw);
 }
 .Image {
   width: 25rem;
@@ -11,7 +8,8 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
   margin: 0 auto;
   border: solid 5px rgb(22, 7, 7);
   object-fit: cover;
-  animation: bounce-in-bck 0.9s cubic-bezier(0.550, 0.055, 0.675, 0.190) 1s backwards;
+  animation: bounce-in-bck 0.9s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s
+    backwards;
   position: relative;
   bottom: 20px;
 }
@@ -53,11 +51,14 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
 }
 @keyframes shadow-pop-tr {
   0% {
-    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
     transform: translateX(0) translateY(0);
   }
   100% {
-    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
     transform: translateX(-8px) translateY(8px);
   }
 }
@@ -78,23 +79,26 @@ background-image: url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrt
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 .topheading {
-background: #000000;
-background: -webkit-linear-gradient(to right, #666262, #000000);  
-background: linear-gradient(to right, #646060, #000000); 
-text-decoration: none;
-color: antiquewhite;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-style: oblique;
-margin: 10px;
-border-radius: 50px;
-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) alternate;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #666262, #000000);
+  background: linear-gradient(to right, #646060, #000000);
+  text-decoration: none;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  margin: 10px;
+  border-radius: 50px;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) alternate;
 }
 .Navigation {
   color: rgb(0, 0, 0);
   background-color: rgb(8, 77, 206);
   border-radius: 200px;
 }
-h2,.Navigation,.title,.Image{
+h2,
+.Navigation,
+.title,
+.Image {
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
@@ -116,13 +120,14 @@ h2 {
   font-family: initial;
   font-weight: bolder;
 }
-#prompt{
+#prompt {
   display: block;
   margin: 0 auto !important;
   text-align: center;
   font-size: larger;
   font-weight: bolder;
-  background-color: antiquewhite;
+  background-color: honeydew;
+  border-radius: 45rem;
   width: 250px !important;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
@@ -154,7 +159,6 @@ h2 {
   text-transform: capitalize;
   animation: color-change-3x 4s linear infinite alternate both;
   text-shadow: "none";
-  
 }
 .Message3 {
   display: grid;
@@ -174,7 +178,6 @@ h2 {
   text-transform: capitalize;
   animation: color-change-3x 4s linear infinite alternate both;
   text-shadow: "none";
-  
 }
 .Message2 {
   display: inline;
@@ -192,12 +195,12 @@ h2 {
   font-variant: small-caps;
   text-transform: capitalize;
 }
-#buttons{
+#buttons {
   display: block;
   margin: 0 auto;
   justify-content: center;
   width: 100px;
-  background-color:cornflowerblue;
+  background-color: cornflowerblue;
   animation: color-change-3x 4s linear infinite alternate-reverse;
   font-family: sans-serif;
   font-weight: bolder;
@@ -206,7 +209,6 @@ h2 {
   top: 19px;
 }
 .Moitreyaimg {
-  
   float: left;
   width: 15rem;
   border-radius: 10000px;
@@ -214,19 +216,19 @@ h2 {
 }
 .Moitreyaimg:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  
 }
 .moitreyatext {
-Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-font-size: 20px;
-letter-spacing: 1.4px;
-word-spacing: 2px;
-color: #172C5D;
-font-weight: 700;
-text-decoration: none;
-font-style: normal;
-font-variant: small-caps;
-text-transform: none;
+  font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond,
+    Times New Roman, serif;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  word-spacing: 2px;
+  color: #172c5d;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
   position: relative;
   z-index: -1;
   margin-left: 250px;
@@ -239,7 +241,7 @@ text-transform: none;
   right: 320px;
 }
 .heading2 {
-  font-size: xx-large;
+  font-size: 50px;
   text-align: center;
   text-decoration: underline;
   z-index: -1;
@@ -257,19 +259,19 @@ text-transform: none;
 }
 .Marvelbeatbox:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  
 }
 .marveltext {
-Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
-font-size: 20px;
-letter-spacing: 1.4px;
-word-spacing: 2px;
-color: #172C5D;
-font-weight: 700;
-text-decoration: none;
-font-style: normal;
-font-variant: small-caps;
-text-transform: none;
+  font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond,
+    Times New Roman, serif;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+  word-spacing: 2px;
+  color: #172c5d;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
   text-align: right;
   top: 20px;
   z-index: -1;
@@ -278,8 +280,8 @@ text-transform: none;
   background-color: whitesmoke;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem; 
-  Font-family: monospace;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  font-family: monospace;
   font-size: 14px;
   letter-spacing: 0.9px;
   word-spacing: 2px;
@@ -292,40 +294,40 @@ text-transform: none;
 .item:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
   border: solid 2px gray;
-  
 }
 @keyframes color-change-3x {
-    0% {
-      background: #19dcea;
-    }
-    50% {
-      background: #b22cff;
-    }
-    100% {
-      background: #ea2222;
-    }
+  0% {
+    background: #19dcea;
   }
-.img4{
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+.img4 {
   width: 30%;
 }
-.container-nav{
+.container-nav {
   background-color: whitesmoke;
   padding: 5px;
   display: flex;
   justify-content: space-between;
-  Font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif;
+  font-family: Bodoni MT, Bodoni 72, Didot, Didot LT STD, Hoefler Text, Garamond,
+    Times New Roman, serif;
   font-size: 20px;
   letter-spacing: 1.4px;
   word-spacing: 2px;
 }
-.item-nav{
+.item-nav {
   text-align: center;
   text-decoration: wavy;
   padding: 5px;
 }
-.item-nav:hover{
-  background-color: #FBAB7E;
-background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+.item-nav:hover {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   border-radius: 10000rem !important;
   animation-name: hovering;
   animation-duration: 30s;
@@ -334,11 +336,9 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
   animation-fill-mode: forwards;
 }
 @keyframes hovering {
-
-  100%{
+  100% {
     width: 0px;
   }
-  
 }
 @keyframes tracking-in-expand {
   0% {
@@ -352,7 +352,7 @@ background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     opacity: 1;
   }
 }
-a{
+a {
   text-decoration: none !important;
   font: inherit !important;
   color: #3e3e3e;
@@ -365,7 +365,7 @@ a{
   top: 0.6rem;
   font-weight: bolder;
 }
-#MessageName{
+#MessageName {
   width: 50% !important;
   align-items: center;
   font-size: large;
@@ -373,44 +373,43 @@ a{
   position: relative;
   top: 9px;
 }
-::placeholder{
+::placeholder {
   text-align: center;
   font-style: oblique;
   position: relative;
   font-stretch: extra-expanded;
 }
-.ceritem-container{
-  background-color: rgb(37, 35, 35);
+.ceritem-container {
+  background-color: rgb(60, 57, 57);
   display: grid;
-  grid-template:auto repeat(4,auto)/repeat(2,auto) repeat(2,auto);
+  grid-template: auto repeat(4, auto) / repeat(2, auto) repeat(2, auto);
   grid-area: auto;
-  padding: 2px 2px 0 2px;
+  padding: 2px 2px 1px 5px;
 }
-.ceritem{
+.ceritem {
   margin: solid 2px gold;
 }
-.img5{
+.img5 {
   width: 100%;
   height: 200px;
   position: relative;
-  top:5px
+  top: 5px;
 }
-.img6{
+.img6 {
   width: 100%;
   height: 420px;
 }
-.grid-1{
+.grid-1 {
   grid-row: span 2;
   grid-column: span 2;
 }
-.contbutt
-{
+.contbutt {
   display: flex;
   justify-content: space-between;
 }
-#buttons-1{
+#buttons-1 {
   width: 150px;
-  background-color:silver;
+  background-color: silver;
   font-family: monospace;
   font-weight: bolder;
   text-transform: capitalize;
@@ -418,9 +417,9 @@ a{
   font-size: x-large;
   border: solid 2px rgb(0, 0, 0);
 }
-#buttons-2{
+#buttons-2 {
   width: 150px;
-  background-color:rgb(24, 24, 24);
+  background-color: rgb(24, 24, 24);
   font-family: monospace;
   font-weight: bolder;
   text-transform: capitalize;
