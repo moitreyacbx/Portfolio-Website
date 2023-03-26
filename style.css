@@ -323,7 +323,7 @@ h2 {
 .item-nav {
   text-align: center;
   text-decoration: wavy;
-  padding: 5px;
+  padding: 4px;
 }
 .item-nav:hover {
   background-color: #fbab7e;
@@ -428,36 +428,35 @@ a {
   font-size: x-large;
   border: solid 2px rgb(0, 0, 0);
 }
-@media screen and (max-width: 501px) {
+@media screen and (max-width: 431px) {
   .title{
-    width: 31.1rem;
+    width: 30rem;
   }
   .topheading{
-    width: 30.5rem;
+    width: 29.5rem;
 }
   .contbutt{
-    width: 33rem;
+    width: 31.5rem;
   }
   .Image{
     position: relative;
-    left: 3.3rem;
+    left: 2.5rem;
   }
   .container-nav{
-    width: 32.5rem;
-    height: 4rem;
     justify-self: center;
+    width: 31rem;
   }
   .Moitreyaimg{
     position: relative;
-    margin-left: 9.5rem;
+    margin-left: 9rem;
   }
   #heading{
-    margin-left: 8rem;
+    margin-left: 7.8rem;
     text-align: center;
 
   }
   #heading2{
-    margin-left: 9.8rem;
+    margin-left: 9rem;
     display: block;
   }
   .moitreyatext{
@@ -470,10 +469,11 @@ a {
     letter-spacing: 0.2rem;
     letter-spacing: .2rem;
     text-align: left;
-    margin-left: 0.7rem;
+    position: relative;
+    left: 0.7rem;
   }
   .container{
-    width: 30rem;
+    width: 28.4rem;
     height: 3rem;
 }
   .item{
@@ -484,11 +484,11 @@ a {
     height: 65%;
   }
   #Message,.Message3{
-    width: 32.50rem;
+    width: 31.50rem;
   }
 
   .ceritem-container{
-    width: 32.2rem;
+    width: 31rem;
   }
   .Marvelbeatbox{
     float: none;
@@ -502,4 +502,5 @@ a {
     font-size: large;
   }
 }
+
 
