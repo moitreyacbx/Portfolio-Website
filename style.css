@@ -294,6 +294,7 @@ h2 {
 .item:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
   border: solid 2px gray;
+  padding: 0.3rem;
 }
 @keyframes color-change-3x {
   0% {
@@ -312,8 +313,8 @@ h2 {
 .container-nav {
   background-color: whitesmoke;
   display: flex;
+  padding: 10px;
   justify-content: space-around;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   font-family: monospace;
   font-size: 14px;
   letter-spacing: 0.9px;
@@ -332,7 +333,7 @@ h2 {
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  padding: 2px;
+  padding: 10px;
 }
 @keyframes hovering {
   100% {
@@ -383,7 +384,7 @@ a {
   display: grid;
   grid-template: auto repeat(4, auto) / repeat(2, auto) repeat(2, auto);
   grid-area: auto;
-  padding: 2px 2px 1px 5px;
+  padding: 2px 5px 1px 5px;
 }
 .ceritem {
   margin: solid 2px gold;
@@ -442,15 +443,15 @@ a {
     left: 2.5rem;
   }
   .container-nav{
-    width: 28.4rem;
+    width: 30.2rem;
     height: 3rem;
   }
   .Moitreyaimg{
     position: relative;
-    margin-left: 9rem;
+    margin-left: 8.5rem;
   }
   #heading{
-    margin-left: 7.8rem;
+    margin-left: 7.2rem;
     text-align: center;
 
   }
@@ -459,14 +460,16 @@ a {
     display: block;
   }
   .moitreyatext{
+    display: block;
     width: 32rem;
-    margin-left: 0.7rem;
+    margin-left: 0.4rem;
     letter-spacing: .2rem;
   }
   .marveltext{
     width: 32rem;
-    letter-spacing: 0.2rem;
-    letter-spacing: .2rem;
+    word-spacing: 2px;
+    margin-left: 0.4rem;
+    letter-spacing: 1.4px;
     text-align: left;
   }
   .container{
@@ -485,12 +488,12 @@ a {
   }
 
   .ceritem-container{
-    width: 31rem;
+    width: 31.4rem;
   }
   .Marvelbeatbox{
     float: none;
     position: relative;
-    left: 9.9rem;
+    left: 8.5rem;
     top: 3rem;
   }
   #buttons{
