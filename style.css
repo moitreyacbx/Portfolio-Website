@@ -233,14 +233,14 @@ h2 {
   z-index: -1;
   margin-left: 250px;
 }
-.heading {
-  font-size: xx-large;
+#heading {
+  font-size: 50px;
   text-decoration: underline;
   text-align: left;
   z-index: -1;
   right: 320px;
 }
-.heading2 {
+#heading2 {
   font-size: 50px;
   text-align: center;
   text-decoration: underline;
@@ -406,6 +406,7 @@ a {
 .contbutt {
   display: flex;
   justify-content: space-between;
+
 }
 #buttons-1 {
   width: 150px;
@@ -427,3 +428,75 @@ a {
   font-size: x-large;
   border: solid 2px rgb(0, 0, 0);
 }
+@media screen and (max-width: 501px) {
+  .title{
+    width: 31.5rem;
+  }
+  .topheading{
+    width: 31rem;
+}
+  .contbutt{
+    width: 33.5rem;
+  }
+  .Image{
+    position: relative;
+    left: 3.3rem;
+  }
+  .container-nav{
+    width: 33rem;
+    justify-self: center;
+  }
+  .Moitreyaimg{
+    position: relative;
+    margin-left: 9.5rem;
+  }
+  #heading{
+    margin-left: 8rem;
+    text-align: center;
+
+  }
+  #heading2{
+    margin-left: 9.8rem;
+    display: block;
+  }
+  .moitreyatext{
+    width: 32rem;
+    margin-left: 0.7rem;
+    letter-spacing: .2rem;
+  }
+  .marveltext{
+    width: 32rem;
+    margin-left: 4rem;
+    letter-spacing: .2rem;
+    text-align: left;
+  }
+  .container{
+    width: 30.5rem;
+    height: 3rem;
+}
+  .item{
+    letter-spacing: -0.001rem;
+  }
+  .img4{
+    width: 1.5rem;
+  }
+  #Message,.Message3{
+    width: 33.25rem;
+  }
+
+  .ceritem-container{
+    width: 33rem;
+  }
+  .Marvelbeatbox{
+    float: none;
+    position: relative;
+    left: 9.9rem;
+    top: 3rem;
+  }
+  #buttons{
+    width: 10rem;
+    height: 3rem;
+    font-size: large;
+  }
+}
+
