@@ -10,7 +10,7 @@ gridback[0].classList.add("coolbackground");
 const nudge = document.querySelector(".img6");
 nudge.style.padding="2px 0px 0px 0px";
 const nudge1 = document.querySelector(".ceritem-container");
-nudge1.style.padding="10px 0px 7px 0px";
+nudge1.style.padding="10px 5px 7px 5px";
 function disptext(){
     const usernames = document.getElementById("MessageName").value;
     document.getElementById("prompt").innerHTML = "Thank you for your message," + usernames + "!";
