@@ -95,9 +95,7 @@ body {
   background-color: rgb(8, 77, 206);
   border-radius: 200px;
 }
-h2,
-.Navigation,
-.title,
+h2,.Navigation,.title,
 .Image {
   text-align: center;
   align-items: center;
@@ -234,7 +232,7 @@ h2 {
   margin-left: 250px;
 }
 #heading {
-  font-size: 50px;
+  font-size: 3.75rem;
   text-decoration: underline;
   text-align: left;
   z-index: -1;
@@ -242,13 +240,15 @@ h2 {
   
 }
 #heading2 {
-  font-size: 50px;
+  font-size: 3.2rem;
   text-align: center;
   text-decoration: underline;
   z-index: -1;
   display: flex;
   justify-content: end;
   color: "none";
+  position: relative;
+  font-weight: bolder;
 }
 .Marvelbeatbox {
   float: right;
@@ -257,6 +257,7 @@ h2 {
   border-radius: 150px;
   border: solid 3px black;
   height: 30%;
+  top: 2rem;
 }
 .Marvelbeatbox:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
@@ -314,7 +315,7 @@ h2 {
 .container-nav {
   background-color: whitesmoke;
   display: flex;
-  padding: 10px;
+  padding: 0.45rem;
   justify-content: space-around;
   font-family: monospace;
   font-size: 14px;
@@ -381,7 +382,7 @@ a {
   font-stretch: extra-expanded;
 }
 .ceritem-container {
-  background-color: rgb(60, 57, 57);
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template: auto repeat(4, auto) / repeat(2, auto) repeat(2, auto);
   grid-area: auto;
@@ -407,9 +408,8 @@ a {
 .contbutt {
   display: flex;
   justify-content: space-between;
-
 }
-#buttons-1 {
+#buttons-1{
   width: 150px;
   background-color: silver;
   font-family: monospace;
@@ -418,8 +418,9 @@ a {
   font-size: x-large;
   font-size: x-large;
   border: solid 2px rgb(0, 0, 0);
+
 }
-#buttons-2 {
+#buttons-2{
   width: 150px;
   background-color: rgb(24, 24, 24);
   font-family: monospace;
@@ -428,6 +429,12 @@ a {
   color: whitesmoke;
   font-size: x-large;
   border: solid 2px rgb(0, 0, 0);
+}
+.circular{
+  border-radius: 100rem;
+}
+.coolbackground{
+  background-image: url(https://imgs.search.brave.com/yWbPrO2FhXTzB3jOyQ3TglFwQMYUpilPELhE2hWh-w4/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5G/SHItN0ZjYnJsV0JX/Vjg0SEwtNlRRSGFI/YSZwaWQ9QXBp);
 }
 @media screen and (max-width: 431px) {
   .title{
