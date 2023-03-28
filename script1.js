@@ -1,16 +1,17 @@
-let headin= document.body.children;
-headin[1].innerHTML = "Welcome to Moitreya's Portfolio Website";
-const but = document.querySelectorAll("button");
-for(let i=0; i<but.length-1; i++)
-{
-    but[i].classList.add("circular"); 
-}
 const gridback = document.querySelectorAll(".ceritem-container");
 gridback[0].classList.add("coolbackground");
 const nudge = document.querySelector(".img6");
 nudge.style.padding="2px 0px 0px 0px";
 const nudge1 = document.querySelector(".ceritem-container");
 nudge1.style.padding="10px 5px 7px 5px";
+let headin= document.body.children;
+headin[1].innerHTML = "Welcome to Moitreya's Portfolio Website";
+const but = document.querySelectorAll("button");
+but[2].addEventListener("click", disptext);
+for(let i=0; i<but.length-1; i++)
+{
+    but[i].classList.add("circular"); 
+}
 function disptext(){
     const usernames = document.getElementById("MessageName").value;
     document.getElementById("prompt").innerHTML = "Thank you for your message," + usernames + "!";
@@ -83,3 +84,7 @@ function changemodelight(){
     const el15 = document.querySelector(".ceritem-container");
     el15.style.backgroundColor = "rgb(37, 35, 35)";
 }
+const szch = querySelector("#heading");
+const szch2 = querySelector("#heading2");
+szch.style.fontSize = szch2.style.fontSize;
+
