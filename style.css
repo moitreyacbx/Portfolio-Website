@@ -8,7 +8,7 @@ body {
   margin: 0 auto;
   border: solid 5px rgb(22, 7, 7);
   object-fit: cover;
-  animation: bounce-in-bck 0.9s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1s
+  animation: bounce-in-bck 0.9s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s
     backwards;
   position: relative;
   bottom: 20px;
@@ -63,32 +63,29 @@ body {
   }
 }
 .title {
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
-  color: rgb(37, 35, 35);
-  border: solid 5px rgba(38, 36, 36, 0.607);
-  border-radius: 0px;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 25px;
-  letter-spacing: -1.2px;
-  word-spacing: -0.4px;
-  font-weight: 700;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: italic;
-  font-variant: small-caps;
-  text-transform: capitalize;
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
+  font-size: 79px;
+     color: #4785d1;
+     font-family: "Arial Black", Gadget, sans-serif;
+     text-shadow: 0px 0px 0 rgb(66,128,204),-1px 0px 0 rgb(61,123,199),-2px 0px 0 rgb(56,118,194),-3px 0px 0 rgb(51,113,189),-4px 0px 0 rgb(46,108,184),-5px 0px 0 rgb(41,103,179),-6px 0px 0 rgb(36,98,174),-7px 0px 0 rgb(31,93,169),-8px 0px 0 rgb(26,88,164),-9px 0px 0 rgb(21,83,159),-10px 0px  0 rgb(16,78,154),-11px 0px 10px rgba(0,0,0,0),-11px 0px 1px rgba(0,0,0,0.5),0px 0px 10px rgba(0,0,0,.2);
+  }
 .topheading {
+  position: relative;
+  bottom: 2rem;
   background: #000000;
   background: -webkit-linear-gradient(to right, #666262, #000000);
   background: linear-gradient(to right, #646060, #000000);
   text-decoration: none;
   color: antiquewhite;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
+  font-family:'Bookman Old Style', serif;
+line-height:1em;
+color:#ffffff;
+font-weight:bold;
+font-size:35px;
+text-shadow:0px 0px 0 rgb(188,176,188),1px 1px 0 rgb(180,168,180),2px 2px 0 rgb(171,159,171),3px 3px 0 rgb(162,150,162),4px 4px 0 rgb(154,142,154),5px 5px 0 rgb(145,133,145), 6px 6px 0 rgb(136,124,136),7px 7px 6px rgba(0,0,0,0.45),7px 7px 1px rgba(0,0,0,0.5),0px 0px 6px rgba(0,0,0,.2);
   margin: 10px;
   border-radius: 50px;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) alternate;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) alternate,shake-horizontal 4s cubic-bezier(.455,.03,.515,.955) infinite alternate-reverse backwards;animation:shake-horizontal 4s cubic-bezier(.455,.03,.515,.955) infinite alternate-reverse backwards
 }
 .Navigation {
   color: rgb(0, 0, 0);
@@ -309,6 +306,63 @@ h2 {
     background: #ea2222;
   }
 }
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
 .img4 {
   width: 30%;
 }
@@ -384,9 +438,32 @@ a {
 .ceritem-container {
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template: auto repeat(4, auto) / repeat(2, auto) repeat(2, auto);
-  grid-area: auto;
-  padding: 2px 5px 1px 5px;
+  grid-gap : 5px; 
+  padding: 5px 5px 5px 5px;
+  grid-template-areas: 
+  "resume cert1 cert2 "
+  "resume cert3 cert4"          
+}
+.grid-1
+{
+  grid-area: resume;
+  justify-content: stretch;
+}
+.grid-2
+{
+  grid-area: cert1;
+}
+.grid-3
+{
+  grid-area: cert2;
+}
+.grid-4
+{
+  grid-area: cert3;
+}
+.grid-5
+{
+  grid-area: cert4;
 }
 .ceritem {
   margin: solid 2px gold;
@@ -401,10 +478,7 @@ a {
   width: 100%;
   height: 420px;
 }
-.grid-1 {
-  grid-row: span 2;
-  grid-column: span 2;
-}
+
 .contbutt {
   display: flex;
   justify-content: space-between;
@@ -434,7 +508,7 @@ a {
   border-radius: 100rem;
 }
 .coolbackground{
-  background-image: url(https://imgs.search.brave.com/yWbPrO2FhXTzB3jOyQ3TglFwQMYUpilPELhE2hWh-w4/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5G/SHItN0ZjYnJsV0JX/Vjg0SEwtNlRRSGFI/YSZwaWQ9QXBp);
+  background-image: url(https://imgs.search.brave.com/CCq5alFQoMRKgtV8d7wrjjk-ZLjD5n9nUKN5QW8Lp-I/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5h/VTF4dWNWUE9FTTdO/WW8xYWRhdVJnSGFF/byZwaWQ9QXBp);
 }
 @media screen and (max-width: 431px) {
   .title{
@@ -509,4 +583,3 @@ a {
     font-size: large;
   }
 }
-
