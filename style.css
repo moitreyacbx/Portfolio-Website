@@ -694,7 +694,7 @@ a {
   }
   .Image {
     position: relative;
-    left: 0.2rem;
+    right: 0.1rem;
   }
   .container-nav {
     width: 30.3rem;
