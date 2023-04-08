@@ -522,80 +522,7 @@ a {
 .coolbackground {
   background-image: url(https://imgs.search.brave.com/acPfBhtr0R_dKXW5MtHf_34WebYGwC1zztkyeOv3D-4/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/T1FtV1V4emFwVWlC/LWJCS1FWSEV3SGFI/YSZwaWQ9QXBp);
 }
-@media screen and (max-width: 431px) {
-  .title {
-    width: 30rem;
-  }
-  .topheading {
-    width: 29.5rem;
-  }
-  .contbutt {
-    width: 31.7rem;
-  }
-  .Image {
-    position: relative;
-    left: 2.5rem;
-  }
-  .container-nav {
-    width: 30.3rem;
-    height: 3rem;
-  }
-  .Moitreyaimg {
-    position: relative;
-    margin-left: 8.5rem;
-  }
-  #heading {
-    margin-left: 7.2rem;
-    text-align: center;
-  }
-  #heading2 {
-    margin-left: 9rem;
-    display: block;
-  }
-  .moitreyatext {
-    display: block;
-    width: 32rem;
-    margin-left: 0.4rem;
-    letter-spacing: 0.2rem;
-  }
-  .marveltext {
-    width: 32rem;
-    word-spacing: 2px;
-    margin-left: 0.4rem;
-    letter-spacing: 1.4px;
-    text-align: left;
-  }
-  .container {
-    width: 28.4rem;
-    height: 3rem;
-  }
-  .item {
-    letter-spacing: -0.001rem;
-  }
-  .img4 {
-    width: 1.5rem;
-    height: 65%;
-  }
-  #Message,
-  .Message3 {
-    width: 31.5rem;
-  }
 
-  .ceritem-container {
-    width: 31.5rem;
-  }
-  .Marvelbeatbox {
-    float: none;
-    position: relative;
-    left: 8.5rem;
-    top: 3rem;
-  }
-  #buttons {
-    width: 10rem;
-    height: 3rem;
-    font-size: large;
-  }
-}
 #cssmenu{
     width:auto;
     display:block;
@@ -755,3 +682,86 @@ a {
 #cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.25s backwards;}
 #cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.16666666666666666s backwards;}@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu.active li a{animation:none!important;}}
 
+@media screen and (max-width: 431px) {
+  .title {
+    width: 30rem;
+  }
+  .topheading {
+    width: 29.5rem;
+  }
+  .contbutt {
+    width: 31.7rem;
+  }
+  .Image {
+    position: relative;
+    left: 0.4rem;
+  }
+  .container-nav {
+    width: 30.3rem;
+    height: 3rem;
+  }
+  .Moitreyaimg {
+    position: relative;
+    margin-left: 8.5rem;
+  }
+  #heading {
+    margin-left: 7.2rem;
+    text-align: center;
+  }
+  #heading2 {
+    margin-left: 9rem;
+    display: block;
+  }
+  .moitreyatext {
+    display: block;
+    width: 32rem;
+    margin-left: 0.4rem;
+    letter-spacing: 0.2rem;
+  }
+  .marveltext {
+    width: 32rem;
+    word-spacing: 2px;
+    margin-left: 0.4rem;
+    letter-spacing: 1.4px;
+    text-align: left;
+  }
+  .container {
+    width: 28.4rem;
+    height: 3rem;
+  }
+  .item {
+    letter-spacing: -0.001rem;
+  }
+  .img4 {
+    width: 1.5rem;
+    height: 65%;
+  }
+  #Message,
+  .Message3 {
+    width: 31.5rem;
+  }
+
+  .ceritem-container {
+    width: 31.5rem;
+  }
+  .Marvelbeatbox {
+    float: none;
+    position: relative;
+    left: 8.5rem;
+    top: 3rem;
+  }
+  #buttons {
+    width: 10rem;
+    height: 3rem;
+    font-size: large;
+  }
+  #cssmenu{
+    width:31.5rem;
+    display:block;
+    text-align:center;
+    font-family:monospace;
+    line-height:1;
+    border-radius: 100px;
+    font-weight: bolder;
+}
+}
