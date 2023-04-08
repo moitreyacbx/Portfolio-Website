@@ -86,7 +86,6 @@ nudge.style.padding="2px 0px 0px 0px";
 const nudge1 = document.querySelector(".ceritem-container");
 nudge1.style.padding="10px 5px 7px 5px";
 let headin= document.body.children;
-headin[1].innerHTML = "Welcome to Moitreya's Portfolio Website";
 headin[1].style.position = "relative";
 headin[1].style.bottom = "2rem";
 headin[1].style.textShadow = "2px 2px 2px 2px";
