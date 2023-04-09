@@ -9,7 +9,7 @@ body {
   border: solid 5px rgb(22, 7, 7);
   object-fit: cover;
   animation: bounce-in-bck 0.9s cubic-bezier(0.55, 0.055, 0.675, 0.19) 1.2s
-  backwards;
+    backwards;
   position: relative;
   bottom: 30px;
 }
@@ -108,7 +108,10 @@ body {
   background-color: rgb(8, 77, 206);
   border-radius: 200px;
 }
-h2,.Navigation,.title,.Image {
+h2,
+.Navigation,
+.title,
+.Image {
   text-align: center;
   align-items: center;
   margin-bottom: 10px;
@@ -389,7 +392,7 @@ h2 {
 .img4 {
   width: 30%;
 }
-.img3{
+.img3 {
   width: 15%;
 }
 .item-nav {
@@ -457,8 +460,8 @@ a {
   grid-gap: 5px;
   padding: 5px 5px 5px 5px;
   grid-template-areas:
-    "resume resume resume resume cert1 cert2 "
-    "resume resume resume resume cert3 cert4";
+    "resume resume cert1 cert2 "
+    "resume resume cert3 cert4";
 }
 .grid-1 {
   grid-area: resume;
@@ -477,12 +480,11 @@ a {
   grid-area: cert4;
 }
 .ceritem {
-
   padding: 5px;
   border-radius: 10px;
   border: groove 4px blueviolet;
 }
-.ceritem:hover{
+.ceritem:hover {
   background-color: #26aedc;
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
 }
@@ -530,164 +532,220 @@ a {
 .coolbackground {
   background-image: url(https://imgs.search.brave.com/RbwDDG_WKCvVyNupYSISn-kCXkWlpJCf521z_CyJkJk/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC44/VU1DalJPaG9ZZVU5/NmQ4cXJhN0RBSGFF/SyZwaWQ9QXBp);
 }
-#cssmenu{
-    width:auto;
-    display:block;
-    text-align:center;
-    font-family:monospace;
-    line-height:1;
-    border-radius: 100px;
-    font-weight: bolder;
+#cssmenu {
+  width: auto;
+  display: block;
+  text-align: center;
+  font-family: monospace;
+  line-height: 1;
+  border-radius: 100px;
+  font-weight: bolder;
 }
-#cssmenu ul{
-    width:auto;
-    display:block;
-    text-align:center;
-    color:#000000;
-    background: rgb(235,227,227);
-    background: linear-gradient(90deg, rgba(235,227,227,1) 0%, whitesmoke 100%, rgba(0,0,0,1) 100%);
-    border: transparent;
-    margin:0; 
-    padding:0;
-    list-style:none;
-    position:relative;
-    z-index:999999990;
-    border-radius: 20px;
-    border: double 2.5px;
-} 
-#cssmenu li{
-    display:inline-block;
-    position:relative;    
+#cssmenu ul {
+  width: auto;
+  display: block;
+  text-align: center;
+  color: #000000;
+  background: rgb(235, 227, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(235, 227, 227, 1) 0%,
+    whitesmoke 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border: transparent;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  z-index: 999999990;
+  border-radius: 20px;
+  border: double 2.5px;
+}
+#cssmenu li {
+  display: inline-block;
+  position: relative;
 
-    margin:0;
-    padding:0;
+  margin: 0;
+  padding: 0;
 }
-#cssmenu >ul>li>span, #cssmenu >ul>li>a {   
-    font-size:1.2rem;
-    color:inherit;
-    text-decoration:none;
-    padding:19px 30px; 
-    font-weight:900;
-    text-transform:uppercase;
-    letter-spacing:2px;   
-    display:block;   
-    position:relative;
-    transition:all 0.3s;
+#cssmenu > ul > li > span,
+#cssmenu > ul > li > a {
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  padding: 19px 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
 }
-#cssmenu li:hover > span, #cssmenu li:hover > a{  
-    color:#333333;
-    background-color:rgb(199, 116, 238);
-    border-radius: 15px;
+#cssmenu li:hover > span,
+#cssmenu li:hover > a {
+  color: #333333;
+  background-color: rgb(199, 116, 238);
+  border-radius: 15px;
 }
-#cssmenu .dropdown{
-    text-align:left;
-    left:0;
-    font-family:Helvetica, Arial, sans-serif;
-    color: #333333;
-    background-color:#F3F3F3;
-    border:none;
-    position:absolute;
-    box-shadow: 3px 4px 8px rgba(0,0,0,0.3);
-    display:none;
-    opacity:0;
-    cursor:default;
+#cssmenu .dropdown {
+  text-align: left;
+  left: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: #f3f3f3;
+  border: none;
+  position: absolute;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.3);
+  display: none;
+  opacity: 0;
+  cursor: default;
 }
 #cssmenu .dropdown li {
-    display: block;  
+  display: block;
 }
-#cssmenu .dropdown li > span, #cssmenu .dropdown li > a, #cssmenu .clm a, #cssmenu .clm h3 {
-    font-size:24px;
-    font-weight:400;
-    font-family:inherit;
-    margin:0;
-    padding:8px 20px; 
-    display:block;
-    color:inherit;
-    text-decoration:none;
+#cssmenu .dropdown li > span,
+#cssmenu .dropdown li > a,
+#cssmenu .clm a,
+#cssmenu .clm h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: inherit;
+  margin: 0;
+  padding: 8px 20px;
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 #cssmenu .clm h3 {
-    font-size:20px;
-    font-weight:700;
+  font-size: 20px;
+  font-weight: 700;
 }
 #cssmenu .sub-item {
-    background-color:#F3F3F3;
-    position:relative;       
-    transition:all 0.3s;
+  background-color: #f3f3f3;
+  position: relative;
+  transition: all 0.3s;
 }
-#cssmenu .dropdown li:hover > span, #cssmenu .dropdown li:hover > a{
-
-    color:#333333;
-    background-color:#19dcea
+#cssmenu .dropdown li:hover > span,
+#cssmenu .dropdown li:hover > a {
+  color: #333333;
+  background-color: #19dcea;
 }
-#cssmenu .clm a:hover{
-    color:#f11010;
-    transition:color 0.2s;
+#cssmenu .clm a:hover {
+  color: #f11010;
+  transition: color 0.2s;
 }
-#cssmenu .dropdown.right0 {left:auto;right:0;} 
-#cssmenu .dropdown li > .dropdown.right0 {left:auto;right:100%;}     
-#cssmenu li.full-width{
-    position:static;
+#cssmenu .dropdown.right0 {
+  left: auto;
+  right: 0;
 }
-#cssmenu li.full-width .dropdown{
-    width:100%;
-    left:0;
-    box-sizing:border-box;
-}  
-#cssmenu li:hover > .dropdown{
-    display:block;
-    opacity:1;
-    z-index:1;
+#cssmenu .dropdown li > .dropdown.right0 {
+  left: auto;
+  right: 100%;
 }
-#cssmenu .dropdown li > .dropdown{
-    left:100%; right:auto;
-    top:0;}
-#cssmenu ul.dropdown
-{
-    min-width:240px;
-    
+#cssmenu li.full-width {
+  position: static;
 }
-#cssmenu div.dropdown  {
-    text-align:center;
+#cssmenu li.full-width .dropdown {
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
 }
-#cssmenu .clm{
-    text-align:left;
-    margin:20px;
-    vertical-align:top;/*or middle*/
-    width:auto;
-    min-width:240px;
-    display:inline-block;
-    *display:inline;*zoom:1;
+#cssmenu li:hover > .dropdown {
+  display: block;
+  opacity: 1;
+  z-index: 1;
 }
-#cssmenu .clm a:hover{
-    color:#ffffff;
-    text-decoration:underline;
+#cssmenu .dropdown li > .dropdown {
+  left: 100%;
+  right: auto;
+  top: 0;
+}
+#cssmenu ul.dropdown {
+  min-width: 240px;
+}
+#cssmenu div.dropdown {
+  text-align: center;
+}
+#cssmenu .clm {
+  text-align: left;
+  margin: 20px;
+  vertical-align: top; /*or middle*/
+  width: auto;
+  min-width: 240px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#cssmenu .clm a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 #cssmenu .arrow {
-    color:inherit;
-    border-style:solid; border-width:2px 2px 0 0; padding:4px; transform:rotate(135deg);margin-top:-8.5px;margin-left:4px;
-    position:relative;
-    display: inline-block;
-    width: 0;
-    height: 0;
-    vertical-align:middle;
-    overflow:hidden;/*for IE6*/
+  color: inherit;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  padding: 4px;
+  transform: rotate(135deg);
+  margin-top: -8.5px;
+  margin-left: 4px;
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  overflow: hidden; /*for IE6*/
 }
 #cssmenu .dropdown .arrow {
-    transform:rotate(45deg);
-    top:50%;margin-top:-6px;
-    position:absolute;left:auto;right:20px;
-} 
-@keyframes topItemAnimation {
-  from {opacity: 0; transform:translate3d(0, -60px, 0);}
-  to {opacity: 1; transform:translate3d(0, 0, 0);}
+  transform: rotate(45deg);
+  top: 50%;
+  margin-top: -6px;
+  position: absolute;
+  left: auto;
+  right: 20px;
 }
-#cssmenu li a {animation:none;}
-#cssmenu.active li a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.08333333333333333s backwards;}
-#cssmenu.active li:nth-of-type(1) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.5s backwards;}
-#cssmenu.active li:nth-of-type(2) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.4166666666666667s backwards;}
-#cssmenu.active li:nth-of-type(3) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.3333333333333333s backwards;}
-#cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.25s backwards;}
-#cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.16666666666666666s backwards;}@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu.active li a{animation:none!important;}}
+@keyframes topItemAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+#cssmenu li a {
+  animation: none;
+}
+#cssmenu.active li a {
+  animation: topItemAnimation 0.5s cubic-bezier(0.16, 0.84, 0.44, 1)
+    0.08333333333333333s backwards;
+}
+#cssmenu.active li:nth-of-type(1) a {
+  animation: topItemAnimation 0.5s cubic-bezier(0.16, 0.84, 0.44, 1) 0.5s
+    backwards;
+}
+#cssmenu.active li:nth-of-type(2) a {
+  animation: topItemAnimation 0.5s cubic-bezier(0.16, 0.84, 0.44, 1)
+    0.4166666666666667s backwards;
+}
+#cssmenu.active li:nth-of-type(3) a {
+  animation: topItemAnimation 0.5s cubic-bezier(0.16, 0.84, 0.44, 1)
+    0.3333333333333333s backwards;
+}
+#cssmenu.active li:nth-of-type(4) a {
+  animation: topItemAnimation 0.5s cubic-bezier(0.16, 0.84, 0.44, 1) 0.25s
+    backwards;
+}
+#cssmenu.active li:nth-of-type(5) a {
+  animation: topItemAnimation 0.5s cubic-bezier(0.16, 0.84, 0.44, 1)
+    0.16666666666666666s backwards;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  #cssmenu.active li a {
+    animation: none !important;
+  }
+}
 
 @media screen and (max-width: 431px) {
   .title {
@@ -762,13 +820,13 @@ a {
     height: 3rem;
     font-size: large;
   }
-  #cssmenu{
-    width:31.5rem;
-    display:block;
-    text-align:center;
-    font-family:monospace;
-    line-height:1;
+  #cssmenu {
+    width: 31.5rem;
+    display: block;
+    text-align: center;
+    font-family: monospace;
+    line-height: 1;
     border-radius: 100px;
     font-weight: bolder;
-}
+  }
 }
