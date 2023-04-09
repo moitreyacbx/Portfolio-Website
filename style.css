@@ -457,8 +457,8 @@ a {
   grid-gap: 5px;
   padding: 5px 5px 5px 5px;
   grid-template-areas:
-    "resume cert1 cert2 "
-    "resume cert3 cert4";
+    "resume resume resume resume cert1 cert2 "
+    "resume resume resume resume cert3 cert4";
 }
 .grid-1 {
   grid-area: resume;
@@ -477,18 +477,26 @@ a {
   grid-area: cert4;
 }
 .ceritem {
-  margin: solid 2px rgb(0, 0, 0);
-  border: double 2px gold;
+
+  padding: 5px;
+  border-radius: 10px;
+  border: groove 4px blueviolet;
+}
+.ceritem:hover{
+  background-color: #26aedc;
+  animation: shadow-pop-tr 0.5s ease-in-out forwards;
 }
 .img5 {
   width: 100%;
   height: 200px;
   position: relative;
   top: 5px;
+  border-radius: 5px;
 }
 .img6 {
   width: 100%;
   height: 420px;
+  border-radius: 7px;
 }
 .contbutt {
   display: flex;
@@ -520,9 +528,8 @@ a {
   border-radius: 100rem;
 }
 .coolbackground {
-  background-image: url(https://imgs.search.brave.com/acPfBhtr0R_dKXW5MtHf_34WebYGwC1zztkyeOv3D-4/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5w/T1FtV1V4emFwVWlC/LWJCS1FWSEV3SGFI/YSZwaWQ9QXBp);
+  background-image: url(https://imgs.search.brave.com/RbwDDG_WKCvVyNupYSISn-kCXkWlpJCf521z_CyJkJk/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC44/VU1DalJPaG9ZZVU5/NmQ4cXJhN0RBSGFF/SyZwaWQ9QXBp);
 }
-
 #cssmenu{
     width:auto;
     display:block;
