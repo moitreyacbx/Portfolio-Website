@@ -457,8 +457,6 @@ a {
 .ceritem-container {
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-gap: 5px;
-  padding: 5px 5px 5px 5px;
   grid-template-areas:
     "resume resume cert1 cert2 "
     "resume resume cert3 cert4";
@@ -480,9 +478,8 @@ a {
   grid-area: cert4;
 }
 .ceritem {
-  padding: 5px;
+  padding: 2px 5px 2px 5px;
   border-radius: 10px;
-  border: groove 2px rgb(216, 80, 237);
 }
 .ceritem:hover {
   background-color: #26aedc;
