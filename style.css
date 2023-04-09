@@ -482,7 +482,7 @@ a {
 .ceritem {
   padding: 5px;
   border-radius: 10px;
-  border: groove 4px blueviolet;
+  border: groove 2px rgb(216, 80, 237);
 }
 .ceritem:hover {
   background-color: #26aedc;
