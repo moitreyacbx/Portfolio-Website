@@ -34,9 +34,6 @@ function changemodedark() {
   el10.style.color = "whitesmoke";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "whitesmoke";
-  const el12 = document.querySelector(".topheading");
-  el12.style.background = "linear-gradient(90deg, #ffffff 0%, #4e4e48 100%)";
-  el12.style.color = "black";
   const el13 = document.querySelector(".Message3");
   el13.style.color = "whitesmoke";
   el13.style.textShadow = "1px 1px 2px black";
@@ -68,10 +65,6 @@ function changemodelight() {
   el10.style.color = "black";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "#172C5D";
-  const el12 = document.querySelector(".topheading");
-  el12.style.background = "-webkit-linear-gradient(to right, #666262, #000000)";
-  el12.style.background = " linear-gradient(to right, #646060, #000000)";
-  el12.style.color = "whitesmoke";
   const el13 = document.querySelector(".Message3");
   el13.style.color = "black";
   el13.style.textShadow = "none";
@@ -87,5 +80,33 @@ const nudge = document.querySelector(".img6");
 nudge.style.padding = "2px 0px 0px 0px";
 const nudge1 = document.querySelector(".ceritem-container");
 nudge1.style.padding = "10px 5px 7px 5px";
-const cerupdt = document.querySelectorAll(".img5")
-cerupdt[3].src="Screenshot (5).png";
+const cerupdt = document.querySelectorAll(".img5");
+cerupdt[3].src = "Screenshot (5).png";
+const container1 = document.querySelector(".contain");
+container1.style.display="flex";
+container1.style.justifyContent = "center";
+container1.style.position = "relative";
+container1.style.bottom = "3.1rem";
+container1.style.background = "url(https://imgs.search.brave.com/Y_odP7F5dYlu5sP8Bkyo6u88TMYMW1CP9WVaDFuiStU/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/aGdzWjFvY1VZUnJ1/cVVJbnJ2aHVnSGFF/byZwaWQ9QXBp)";
+container1.style.borderRadius = "50px";
+container1.style.height = "8rem";
+container1.style.border = "3px double gray";
+const tit1 = document.querySelector(".topheading");
+tit1.innerHTML = "Moitreya Chattopadhyay";
+tit1.style.fontFamily = "Verdana";
+function titleanim() {
+  const tit1 = document.querySelector(".topheading");
+  const container2 = document.querySelector(".contain");
+  tit1.innerHTML = "Moitreya Chattopadhyay";
+  container2.style.animation = "none";
+
+}
+
+function titleanim1() {
+  const tit1 = document.querySelector(".topheading");
+  const container2 = document.querySelector(".contain");
+  container2.style.animation = "none";
+  container2.style.animation = "rotate-hor-center 1.2s linear infinite both";
+  tit1.innerHTML = "MarvelBeatbox";
+
+}
