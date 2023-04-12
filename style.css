@@ -124,7 +124,7 @@ h1 {
   font-size: 63px;
   font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 7px;
-  background-image: url("https://www.html-code-generator.com/images/bg/mask-image9.jpg");
+  background-image: url("https://imgs.search.brave.com/d2HsvPnGF46VHABz3aTWdV4xh17AbcibhqSuC4U118Y/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/QUVMY1ZUZWROUzlq/SGxYbEU5U0VBSGFF/NyZwaWQ9QXBp");
   background-position: -113px 391px;
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #000000;
@@ -198,6 +198,7 @@ h2,
   text-transform: capitalize;
   animation: color-change-3x 4s linear infinite alternate both;
   text-shadow: "none";
+  
 }
 .Message3 {
   display: grid;
@@ -273,22 +274,40 @@ h2,
   margin-left: 250px;
 }
 #heading {
+  background-image: url("https://imgs.search.brave.com/d2HsvPnGF46VHABz3aTWdV4xh17AbcibhqSuC4U118Y/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/QUVMY1ZUZWROUzlq/SGxYbEU5U0VBSGFF/NyZwaWQ9QXBp");
+  background-position: -113px 391px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
   font-size: 3.75rem;
-  text-decoration: underline;
   text-align: left;
   z-index: -1;
   right: 320px;
+  margin-top: 10px;
+  text-decoration:underline rgb(29, 28, 28);
 }
 #heading2 {
+  
+  background-image: url("https://imgs.search.brave.com/d2HsvPnGF46VHABz3aTWdV4xh17AbcibhqSuC4U118Y/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/QUVMY1ZUZWROUzlq/SGxYbEU5U0VBSGFF/NyZwaWQ9QXBp");
+  background-position: -113px 391px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0000;
   font-size: 3.2rem;
   text-align: center;
-  text-decoration: underline;
+  margin-top: 10px;
+  text-decoration:underline rgb(29, 28, 28);
   z-index: -1;
   display: flex;
   justify-content: end;
   color: "none";
   position: relative;
   font-weight: bolder;
+  position: relative;
 }
 .Marvelbeatbox {
   float: right;
@@ -378,7 +397,7 @@ h2,
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-  padding: 10px;
+  padding: 2px;
 }
 @keyframes hovering {
   100% {
@@ -719,12 +738,14 @@ a {
 
 @media screen and (max-width: 431px) {
   .title {
-    width: 30rem;
+    width: 31rem;
   }
   .topheading {
     text-align: center;
     letter-spacing: -2px;
-    color: silver;
+    font-size: 40px;
+    top: 0.8rem;
+
   }
   .contbutt {
     width: 31.7rem;
