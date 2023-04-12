@@ -25,6 +25,7 @@ function changemodedark() {
   el6.style.color = "whitesmoke";
   const el7 = document.querySelector("#heading");
   el7.style.color = "whitesmoke";
+  el7.style.textDecoration = "underline silver";
   const el8 = document.querySelector("#Message");
   el8.style.color = "whitesmoke";
   el8.style.textShadow = "1px 1px 2px black";
@@ -32,6 +33,8 @@ function changemodedark() {
   el9.style.borderColor = "whitesmoke";
   const el10 = document.querySelector("#heading2");
   el10.style.color = "whitesmoke";
+  el10.style.textDecoration = "underline silver";
+  el10.style.webkitTextStrokeColor = "none";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "whitesmoke";
   const el13 = document.querySelector(".Message3");
@@ -76,6 +79,11 @@ function changemodelight() {
 const szch = document.querySelector("#heading");
 const szch2 = document.querySelector("#heading2");
 szch.style.fontSize = szch2.style.fontSize;
+szch2.style.position = "relative";
+szch2.style.top = "1rem";
+szch2.style.left = "1rem";
+szch2.style.fontStyle="normal";
+szch.style.fontStyle="normal";
 const nudge = document.querySelector(".img6");
 nudge.style.padding = "2px 0px 0px 0px";
 const nudge1 = document.querySelector(".ceritem-container");
@@ -109,15 +117,14 @@ function titleanim1() {
   container2.style.animation = "rotate-hor-center 1s linear 1 both";
   if (tit1.innerHTML === "Moitreya") {
     tit1.innerHTML = "MarvelBeatbox";
-  }
-  else if (tit1.innerHTML === "MarvelBeatbox") {
+  } else if (tit1.innerHTML === "MarvelBeatbox") {
     tit1.innerHTML = "Moitreya";
   }
 }
-setInterval(titleanim,1000);
-setInterval(titleanim1,2000);
-const head=document.querySelector(".title").style.fontStyle="normal";
-const cont=document.querySelector(".contbutt").style.bottom = "35px";
-
-
-
+setInterval(titleanim, 1000);
+setInterval(titleanim1, 2000);
+const head = (document.querySelector(".title").style.fontStyle = "normal");
+const cont = (document.querySelector(".contbutt").style.bottom = "35px");
+const title = document.querySelector(".title");
+title.style.marginBottom = "25px";
+/*End*/
