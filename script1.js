@@ -92,12 +92,12 @@ container1.style.borderRadius = "50px";
 container1.style.height = "8rem";
 container1.style.border = "3px double gray";
 const tit1 = document.querySelector(".topheading");
-tit1.innerHTML = "Moitreya Chattopadhyay";
+tit1.innerHTML = "Moitreya";
 tit1.style.fontFamily = "Verdana";
 function titleanim() {
   const tit1 = document.querySelector(".topheading");
   const container2 = document.querySelector(".contain");
-  tit1.innerHTML = "Moitreya Chattopadhyay";
+  tit1.innerHTML = "Moitreya";
   container2.style.animation = "none";
 
 }
@@ -110,3 +110,4 @@ function titleanim1() {
   tit1.innerHTML = "MarvelBeatbox";
 
 }
+
