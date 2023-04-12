@@ -107,17 +107,17 @@ body {
 .topheading {
   position: relative;
   bottom: 1.5rem;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 	background-image: url('https://imgs.search.brave.com/wh0-gq7YAJsqvQsYcLfanjXPd4xWA2Cp1JuooxyBx2Y/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5G/ZjN0d3ZnNkt5Y1Vl/SzlQTXJ5TGhBSGFF/NyZwaWQ9QXBp');
-	background-position: 0px 0px;
+	background-position: 5px 5px;
 	-webkit-text-stroke-width: 2px;
 	-webkit-text-stroke-color: #000000;
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: #0000;
-  font-size: 50px;
+	-webkit-text-fill-color: #c0343400;
+  font-size: 55px;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
   background-size: cover;
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) alternate,
     shake-horizontal 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
@@ -327,11 +327,11 @@ h2 {
   text-align: center;
   text-decoration: wavy;
   border-radius: 1000rem;
-  width: max-content;
 }
 .item:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
   border: solid 2px gray;
+  padding: 0.3rem;
 }
 @keyframes color-change-3x {
   0% {
@@ -718,10 +718,17 @@ a {
     width: 30rem;
   }
   .topheading {
-    width: 29.5rem;
+    text-align: center;
+    letter-spacing: -2px;
+    color: silver;
+
   }
   .contbutt {
     width: 31.7rem;
+  }
+  .contain{
+    width: 31.7rem;
+    display: inline-block;
   }
   .Image {
     position: relative;
@@ -774,6 +781,10 @@ a {
 
   .ceritem-container {
     width: 31.5rem;
+    height: 200% !important;  
+  }
+  .ceritem{
+    padding: 1px 1px 1px 1px;
   }
   .Marvelbeatbox {
     float: none;
