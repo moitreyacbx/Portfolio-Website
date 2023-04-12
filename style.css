@@ -85,7 +85,7 @@ h1 {
   position: relative;
   bottom: 2rem;
   font-size: 79px;
-  color: #47a3d1;
+  color: #429cc8;
   font-family: "Arial Black", Gadget, sans-serif;
   text-shadow: 0px 0px 0 rgb(66, 199, 204), -1px 0px 0 rgb(44, 133, 193),
     -2px 0px 0 rgb(56, 118, 194), -3px 0px 0 rgb(51, 113, 189),
@@ -154,7 +154,6 @@ h2,
   align-items: center;
   margin-bottom: 2px;
 }
-
 .legend {
   font-family: initial;
   font-weight: bolder;
@@ -738,7 +737,7 @@ a {
 
 @media screen and (max-width: 431px) {
   .title {
-    width: 31rem;
+    width: 32rem;
   }
   .topheading {
     text-align: center;
@@ -751,28 +750,29 @@ a {
     width: 31.7rem;
   }
   .contain {
-    width: 31.7rem;
+    width: 31.4rem;
     display: inline-block;
   }
   .Image {
     position: relative;
-    right: 0.1rem;
+    left: 0.5rem;
   }
   .container-nav {
-    width: 30.3rem;
+    width: 29.8rem;
     height: 3rem;
   }
   .Moitreyaimg {
     position: relative;
-    margin-left: 8.5rem;
+    margin-left: 8.3rem;
   }
   #heading {
-    margin-left: 7.2rem;
+    margin-left: 6rem;
     text-align: center;
   }
   #heading2 {
-    margin-left: 9rem;
+    margin-left: 5.8rem;
     display: block;
+    margin-top: 2rem;
   }
   .moitreyatext {
     display: block;
@@ -804,7 +804,7 @@ a {
   }
 
   .ceritem-container {
-    width: 31.5rem;
+    width: 31rem;
     height: 200% !important;
   }
   .ceritem {
