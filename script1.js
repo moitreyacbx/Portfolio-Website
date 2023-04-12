@@ -83,31 +83,41 @@ nudge1.style.padding = "10px 5px 7px 5px";
 const cerupdt = document.querySelectorAll(".img5");
 cerupdt[3].src = "Screenshot (5).png";
 const container1 = document.querySelector(".contain");
-container1.style.display="flex";
+container1.style.display = "flex";
 container1.style.justifyContent = "center";
 container1.style.position = "relative";
 container1.style.bottom = "3.1rem";
-container1.style.background = "url(https://imgs.search.brave.com/Y_odP7F5dYlu5sP8Bkyo6u88TMYMW1CP9WVaDFuiStU/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5X/aGdzWjFvY1VZUnJ1/cVVJbnJ2aHVnSGFF/byZwaWQ9QXBp)";
+container1.style.background =
+  "url(https://imgs.search.brave.com/JLoaFEemk7fhJ8j9ma7dFT4kd_MXbZw9t5D6-j7CSV4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDMzNDAx/OTAuanBn)";
 container1.style.borderRadius = "50px";
 container1.style.height = "8rem";
 container1.style.border = "3px double gray";
-const tit1 = document.querySelector(".topheading");
-tit1.innerHTML = "Moitreya";
-tit1.style.fontFamily = "Verdana";
+const tit = document.querySelector(".topheading");
+tit.innerHTML = "Moitreya";
+tit.style.fontStyle = "normal";
+tit.style.letterSpacing = "10px";
+tit.style.fontWeight = "900";
 function titleanim() {
-  const tit1 = document.querySelector(".topheading");
   const container2 = document.querySelector(".contain");
-  tit1.innerHTML = "Moitreya";
   container2.style.animation = "none";
-
 }
 
 function titleanim1() {
   const tit1 = document.querySelector(".topheading");
   const container2 = document.querySelector(".contain");
   container2.style.animation = "none";
-  container2.style.animation = "rotate-hor-center 1.2s linear infinite both";
-  tit1.innerHTML = "MarvelBeatbox";
-
+  container2.style.animation = "rotate-hor-center 1s linear 1 both";
+  if (tit1.innerHTML === "Moitreya") {
+    tit1.innerHTML = "MarvelBeatbox";
+  }
+  else if (tit1.innerHTML === "MarvelBeatbox") {
+    tit1.innerHTML = "Moitreya";
+  }
 }
+setInterval(titleanim,1000);
+setInterval(titleanim1,2000);
+const head=document.querySelector(".title").style.fontStyle="normal";
+const cont=document.querySelector(".contbutt").style.bottom = "35px";
+
+
 
