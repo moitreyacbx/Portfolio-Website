@@ -738,7 +738,7 @@ a {
 @media screen and (max-width: 431px) {
   .title {
     width: 32rem;
-    font-size: 60px;
+    font-size: 62px;
   }
   .topheading {
     text-align: center;
@@ -746,6 +746,7 @@ a {
     font-size: 40px;
     top: 0.8rem;
     background-size: 0.1rem;
+    display: inline-block;
   }
   .contbutt {
     width: 31.7rem;
@@ -768,7 +769,7 @@ a {
     top: 10px;
   }
   #heading {
-    margin-left: 5.9rem;
+    margin-left: 6.9rem;
     text-align: center;
     display: inline-block;
   }
