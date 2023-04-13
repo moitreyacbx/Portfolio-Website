@@ -56,12 +56,14 @@ function changemodelight() {
   const el6 = document.querySelector(".moitreyatext");
   el6.style.color = "#172C5D";
   const el7 = document.querySelector("#heading");
+  el7.style.color = "#077fff";
   const el8 = document.querySelector("#Message");
   el8.style.color = "black";
   el8.style.textShadow = "none";
   const el9 = document.querySelector(".Moitreyaimg");
   el9.style.borderColor = "black";
   const el10 = document.querySelector("#heading2");
+  el10.style.color = "#077fff";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "#172C5D";
   const el13 = document.querySelector(".Message3");
