@@ -25,7 +25,6 @@ function changemodedark() {
   el6.style.color = "whitesmoke";
   const el7 = document.querySelector("#heading");
   el7.style.color = "whitesmoke";
-  el7.style.textDecoration = "underline silver";
   const el8 = document.querySelector("#Message");
   el8.style.color = "whitesmoke";
   el8.style.textShadow = "1px 1px 2px black";
@@ -33,7 +32,6 @@ function changemodedark() {
   el9.style.borderColor = "whitesmoke";
   const el10 = document.querySelector("#heading2");
   el10.style.color = "whitesmoke";
-  el10.style.textDecoration = "underline silver";
   el10.style.webkitTextStrokeColor = "none";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "whitesmoke";
@@ -58,14 +56,12 @@ function changemodelight() {
   const el6 = document.querySelector(".moitreyatext");
   el6.style.color = "#172C5D";
   const el7 = document.querySelector("#heading");
-  el7.style.color = "black";
   const el8 = document.querySelector("#Message");
   el8.style.color = "black";
   el8.style.textShadow = "none";
   const el9 = document.querySelector(".Moitreyaimg");
   el9.style.borderColor = "black";
   const el10 = document.querySelector("#heading2");
-  el10.style.color = "black";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "#172C5D";
   const el13 = document.querySelector(".Message3");
@@ -76,6 +72,28 @@ function changemodelight() {
   const el15 = document.querySelector(".ceritem-container");
   el15.style.backgroundColor = "rgb(37, 35, 35)";
 }
+
+function titleanim() {
+  const container2 = document.querySelector(".contain");
+  container2.style.animation = "none";
+}
+function titleanim1() {
+  const tit1 = document.querySelector(".topheading");
+  const container2 = document.querySelector(".contain");
+  container2.style.animation = "none";
+  container2.style.animation = "rotate-hor-center 1s linear 1 both";
+  if (tit1.innerHTML === "Moitreya") {
+    tit1.innerHTML = "MarvelBeatbox";
+  } else if (tit1.innerHTML === "MarvelBeatbox") {
+    tit1.innerHTML = "Moitreya";
+  }
+}
+setInterval(titleanim, 1000);
+setInterval(titleanim1, 2000);
+const head = (document.querySelector(".title").style.fontStyle = "normal");
+const cont = (document.querySelector(".contbutt").style.bottom = "35px");
+const title = document.querySelector(".title");
+title.style.marginBottom = "35px";
 const szch = document.querySelector("#heading");
 const szch2 = document.querySelector("#heading2");
 szch.style.fontSize = szch2.style.fontSize;
@@ -105,26 +123,4 @@ tit.innerHTML = "Moitreya";
 tit.style.fontStyle = "normal";
 tit.style.letterSpacing = "10px";
 tit.style.fontWeight = "900";
-function titleanim() {
-  const container2 = document.querySelector(".contain");
-  container2.style.animation = "none";
-}
-
-function titleanim1() {
-  const tit1 = document.querySelector(".topheading");
-  const container2 = document.querySelector(".contain");
-  container2.style.animation = "none";
-  container2.style.animation = "rotate-hor-center 1s linear 1 both";
-  if (tit1.innerHTML === "Moitreya") {
-    tit1.innerHTML = "MarvelBeatbox";
-  } else if (tit1.innerHTML === "MarvelBeatbox") {
-    tit1.innerHTML = "Moitreya";
-  }
-}
-setInterval(titleanim, 1000);
-setInterval(titleanim1, 2000);
-const head = (document.querySelector(".title").style.fontStyle = "normal");
-const cont = (document.querySelector(".contbutt").style.bottom = "35px");
-const title = document.querySelector(".title");
-title.style.marginBottom = "25px";
 /*End*/
