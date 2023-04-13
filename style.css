@@ -264,7 +264,7 @@ h2,
   font-size: 20px;
   letter-spacing: 1.4px;
   word-spacing: 2px;
-  color: #172c5d;
+  color: #1a2131;
   font-weight: 700;
   text-decoration: none;
   font-style: normal;
@@ -277,7 +277,7 @@ h2,
 #heading {
   color: #077fff;
   font-family: Michroma, sans-serif;
-  font-weight: bold;
+  font-weight:900;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
     0px 2px 0 rgb(-38, 82, 210), 0px 3px 0 rgb(-54, 66, 194),
     0px 4px 0 rgb(-69, 51, 179), 0px 5px 0 rgb(-84, 36, 164),
@@ -287,7 +287,7 @@ h2,
     0px 12px 0 rgb(-190, -70, 58), 0px 13px 0 rgb(-205, -85, 43),
     0px 14px 0 rgb(-220, -100, 28), 0px 15px 14px rgba(0, 0, 0, 0.6),
     0px 15px 1px rgba(0, 0, 0, 0.5), 0px 0px 14px rgba(0, 0, 0, 0.2);
-  font-size: 3.75rem;
+  font-size: 3.5rem;
   text-align: left;
   z-index: -1;
   right: 320px;
@@ -296,7 +296,7 @@ h2,
 #heading2 {
   color: #077fff;
   font-family: Michroma, sans-serif;
-  font-weight: bold;
+  font-weight:900;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
     0px 2px 0 rgb(-38, 82, 210), 0px 3px 0 rgb(-54, 66, 194),
     0px 4px 0 rgb(-69, 51, 179), 0px 5px 0 rgb(-84, 36, 164),
@@ -842,5 +842,8 @@ a {
     line-height: 1;
     border-radius: 100px;
     font-weight: bolder;
+  }
+  .footer{
+    width: 31rem;
   }
 }
