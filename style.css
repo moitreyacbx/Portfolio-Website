@@ -275,32 +275,41 @@ h2,
   margin-left: 250px;
 }
 #heading {
-  background-image: url("https://imgs.search.brave.com/d2HsvPnGF46VHABz3aTWdV4xh17AbcibhqSuC4U118Y/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/QUVMY1ZUZWROUzlq/SGxYbEU5U0VBSGFF/NyZwaWQ9QXBp");
-  background-position: -113px 391px;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #000000;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #0000;
+  color: #077fff;
+  font-family: Michroma, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
+    0px 2px 0 rgb(-38, 82, 210), 0px 3px 0 rgb(-54, 66, 194),
+    0px 4px 0 rgb(-69, 51, 179), 0px 5px 0 rgb(-84, 36, 164),
+    0px 6px 0 rgb(-99, 21, 149), 0px 7px 0 rgb(-114, 6, 134),
+    0px 8px 0 rgb(-129, -9, 119), 0px 9px 0 rgb(-144, -24, 104),
+    0px 10px 0 rgb(-160, -40, 88), 0px 11px 0 rgb(-175, -55, 73),
+    0px 12px 0 rgb(-190, -70, 58), 0px 13px 0 rgb(-205, -85, 43),
+    0px 14px 0 rgb(-220, -100, 28), 0px 15px 14px rgba(0, 0, 0, 0.6),
+    0px 15px 1px rgba(0, 0, 0, 0.5), 0px 0px 14px rgba(0, 0, 0, 0.2);
   font-size: 3.75rem;
   text-align: left;
   z-index: -1;
   right: 320px;
   margin-top: 10px;
-  text-decoration: underline rgb(29, 28, 28);
 }
 #heading2 {
-  background-image: url("https://imgs.search.brave.com/d2HsvPnGF46VHABz3aTWdV4xh17AbcibhqSuC4U118Y/rs:fit:713:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC40/QUVMY1ZUZWROUzlq/SGxYbEU5U0VBSGFF/NyZwaWQ9QXBp");
-  background-position: -113px 391px;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #000000;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #0000;
+  color: #077fff;
+  font-family: Michroma, sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
+    0px 2px 0 rgb(-38, 82, 210), 0px 3px 0 rgb(-54, 66, 194),
+    0px 4px 0 rgb(-69, 51, 179), 0px 5px 0 rgb(-84, 36, 164),
+    0px 6px 0 rgb(-99, 21, 149), 0px 7px 0 rgb(-114, 6, 134),
+    0px 8px 0 rgb(-129, -9, 119), 0px 9px 0 rgb(-144, -24, 104),
+    0px 10px 0 rgb(-160, -40, 88), 0px 11px 0 rgb(-175, -55, 73),
+    0px 12px 0 rgb(-190, -70, 58), 0px 13px 0 rgb(-205, -85, 43),
+    0px 14px 0 rgb(-220, -100, 28), 0px 15px 14px rgba(0, 0, 0, 0.6),
+    0px 15px 1px rgba(0, 0, 0, 0.5), 0px 0px 14px rgba(0, 0, 0, 0.2);
   font-size: 3.2rem;
   text-align: center;
   margin-top: 10px;
-  text-decoration: underline rgb(29, 28, 28);
+  margin-bottom: 40px;
   z-index: -1;
   display: flex;
   justify-content: end;
