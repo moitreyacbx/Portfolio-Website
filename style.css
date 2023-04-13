@@ -738,6 +738,7 @@ a {
 @media screen and (max-width: 431px) {
   .title {
     width: 32rem;
+    font-size: 62px;
   }
   .topheading {
     text-align: center;
