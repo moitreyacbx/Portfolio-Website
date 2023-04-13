@@ -12,6 +12,8 @@ function disptext() {
   document.querySelector("#buttons").innerHTML = "Submitted";
 }
 function changemodedark() {
+  const el1 = document.querySelector(".title");
+  el1.style.color = "whitesmoke";
   const el2 = document.querySelector("body");
   el2.style.backgroundImage =
     "url(https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Background-Black-background.jpg)";
@@ -42,8 +44,13 @@ function changemodedark() {
   el14.style.border = "solid 3px whitesmoke";
   const el15 = document.querySelector(".ceritem-container");
   el15.style.backgroundColor = "white";
+  const el16 = document.querySelector(".footer");
+  el16.style.backgroundColor = "seashell";
+  el16.style.color = "#242b3a";
 }
 function changemodelight() {
+  const el1 = document.querySelector(".title");
+  el1.style.color = "#077fff";
   const el2 = document.querySelector("body");
   el2.style.backgroundImage =
     "url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw)";
@@ -73,8 +80,11 @@ function changemodelight() {
   el14.style.border = "solid 3px black";
   const el15 = document.querySelector(".ceritem-container");
   el15.style.backgroundColor = "rgb(37, 35, 35)";
-}
+  const el16 = document.querySelector(".footer");
+  el16.style.backgroundColor = "#242b3a";
+  el16.style.color = "white";
 
+}
 function titleanim() {
   const container2 = document.querySelector(".contain");
   container2.style.animation = "none";
@@ -119,10 +129,25 @@ container1.style.background =
   "url(https://imgs.search.brave.com/JLoaFEemk7fhJ8j9ma7dFT4kd_MXbZw9t5D6-j7CSV4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDMzNDAx/OTAuanBn)";
 container1.style.borderRadius = "50px";
 container1.style.height = "8rem";
-container1.style.border = "3px double gray";
+container1.style.border = "3px double whitesmoke";
 const tit = document.querySelector(".topheading");
 tit.innerHTML = "Moitreya";
 tit.style.fontStyle = "normal";
 tit.style.letterSpacing = "10px";
 tit.style.fontWeight = "900";
+const footer = document.querySelector(".footer");
+const name1 = document.createElement("p");
+name1.innerHTML = "Moitreya Chattopadhyay";
+footer.appendChild(name1);
+footer.style.display = "flex";
+footer.innerHTML = "Copyright &copy - 2023 All Rights Reserved <br>Moitreya Chattopadhyay,Student of JU";
+footer.style.fontStyle = "bold";
+footer.style.fontSize = "20px";
+footer.style.fontFamily = "Arial-Black";
+footer.style.backgroundColor="#242b3a";
+footer.style.color = "white";
+footer.style.justifyContent = "center";
+footer.style.marginTop = "10px";
+footer.style.padding = "5px";
+footer.style.borderRadius = "5px";
 /*End*/
