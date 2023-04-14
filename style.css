@@ -85,7 +85,7 @@ h1 {
   position: relative;
   bottom: 2rem;
   font-size: 75px;
-  color: #077fff;
+  color: #2967a9;
   font-family: Michroma, sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
@@ -247,7 +247,7 @@ h2,
   font-weight: bolder;
   text-transform: capitalize;
   position: relative;
-  top: 19px;
+  top: 30px;
 }
 .Moitreyaimg {
   float: left;
@@ -275,7 +275,7 @@ h2,
   margin-left: 250px;
 }
 #heading {
-  color: #077fff;
+  color: #2967a9;
   font-family: Michroma, sans-serif;
   font-weight:900;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
@@ -294,7 +294,7 @@ h2,
   margin-top: 10px;
 }
 #heading2 {
-  color: #077fff;
+  color: #2967a9;
   font-family: Michroma, sans-serif;
   font-weight:900;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
@@ -363,8 +363,7 @@ h2,
 }
 .item:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  border: solid 2px gray;
-  padding: 0.3rem;
+  border: solid 1.3px gray;
 }
 @keyframes color-change-3x {
   0% {
@@ -807,13 +806,20 @@ a {
   .item {
     letter-spacing: -0.001rem;
   }
+  .item:hover{
+    padding: 5px;
+  }
   .img4 {
     width: 1.5rem;
     height: 65%;
   }
-  #Message,
+  #Message{
+    width: 31.5rem;
+  }
   .Message3 {
     width: 31.5rem;
+    position: relative;
+    top: 15px;
   }
 
   .ceritem-container {
@@ -845,5 +851,18 @@ a {
   }
   .footer{
     width: 31rem;
+  }
+  .level{
+    width: 31.7rem;
+    font-weight: 900;
+    font-size: 40px !important;
+  }
+  .disp{
+    position: relative;
+    bottom : 20rem !important;
+    width: 31.7rem;
+    font-weight: 900;
+    font-size: 40px !important;
+    margin-bottom: 20px !important;
   }
 }
