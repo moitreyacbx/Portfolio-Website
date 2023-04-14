@@ -10,7 +10,16 @@ function disptext() {
   document.getElementById("prompt").innerHTML =
     "Thank you for your message," + usernames + "!";
   document.querySelector("#buttons").innerHTML = "Submitted";
+  document.querySelector("#Message2").innerHTML = "";
+  usernames.innerHTML = "";
 }
+{
+  remove = () => {
+    document.getElementById("prompt").innerHTML = "";
+    document.querySelector("#buttons").innerHTML = "Submit";
+  };
+}
+
 function changemodedark() {
   const el1 = document.querySelector(".title");
   el1.style.color = "whitesmoke";
@@ -50,7 +59,7 @@ function changemodedark() {
 }
 function changemodelight() {
   const el1 = document.querySelector(".title");
-  el1.style.color = "#077fff";
+  el1.style.color = "#2a5889";
   const el2 = document.querySelector("body");
   el2.style.backgroundImage =
     "url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw)";
@@ -63,14 +72,14 @@ function changemodelight() {
   const el6 = document.querySelector(".moitreyatext");
   el6.style.color = "#172C5D";
   const el7 = document.querySelector("#heading");
-  el7.style.color = "#077fff";
+  el7.style.color = "#2a5889";
   const el8 = document.querySelector("#Message");
   el8.style.color = "black";
   el8.style.textShadow = "none";
   const el9 = document.querySelector(".Moitreyaimg");
   el9.style.borderColor = "black";
   const el10 = document.querySelector("#heading2");
-  el10.style.color = "#077fff";
+  el10.style.color = "#2a5889";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "#172C5D";
   const el13 = document.querySelector(".Message3");
@@ -83,7 +92,6 @@ function changemodelight() {
   const el16 = document.querySelector(".footer");
   el16.style.backgroundColor = "#242b3a";
   el16.style.color = "white";
-
 }
 function titleanim() {
   const container2 = document.querySelector(".contain");
@@ -112,8 +120,8 @@ szch.style.fontSize = szch2.style.fontSize;
 szch2.style.position = "relative";
 szch2.style.top = "1rem";
 szch2.style.left = "1rem";
-szch2.style.fontStyle="normal";
-szch.style.fontStyle="normal";
+szch2.style.fontStyle = "normal";
+szch.style.fontStyle = "normal";
 const nudge = document.querySelector(".img6");
 nudge.style.padding = "2px 0px 0px 0px";
 const nudge1 = document.querySelector(".ceritem-container");
@@ -140,14 +148,41 @@ const name1 = document.createElement("p");
 name1.innerHTML = "Moitreya Chattopadhyay";
 footer.appendChild(name1);
 footer.style.display = "flex";
-footer.innerHTML = "Copyright &copy - 2023 All Rights Reserved <br>Moitreya Chattopadhyay,Student of JU";
+footer.innerHTML =
+  "Copyright &copy - 2023 All Rights Reserved <br>Moitreya Chattopadhyay,Student of JU";
 footer.style.fontStyle = "bold";
 footer.style.fontSize = "20px";
 footer.style.fontFamily = "Arial-Black";
-footer.style.backgroundColor="#242b3a";
+footer.style.backgroundColor = "#242b3a";
 footer.style.color = "white";
 footer.style.justifyContent = "center";
 footer.style.marginTop = "10px";
 footer.style.padding = "5px";
 footer.style.borderRadius = "5px";
+const level = document.querySelector(".level");
+level.style.display = "flex";
+level.classList.add("topheading");
+level.style.justifyContent = "center";
+level.innerHTML = "Skill Level :<br>  Hover to Display";
+level.style.fontSize = "26px";
+level.style.top = "15px";
+level.style.backgroundColor = "whitesmoke";
+leveladvanced = () => {
+  level.innerHTML = "Skill Level :<br> Advanced";
+};
+levelbasic = () => {
+  level.innerHTML = "Skill Level :<br> Beginner";
+};
+levelintermediate = () => {
+  level.innerHTML = "Skill Level :<br> Intermediate";
+};
+hovering = () => {
+  level.innerHTML = "Skill Level :<br> Hover to Display";
+};
+const ref = document.querySelector(".disp");
+ref.style.display = "flex";
+ref.classList.add("topheading");
+ref.style.justifyContent = "center";
+ref.style.fontSize = "26px";
+ref.innerHTML = "Click to display";
 /*End*/
