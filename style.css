@@ -85,7 +85,7 @@ h1 {
   position: relative;
   bottom: 2rem;
   font-size: 75px;
-  color: #2967a9;
+  color: #1e7fe7;
   font-family: Michroma, sans-serif;
   font-weight: bold;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
@@ -275,7 +275,7 @@ h2,
   margin-left: 250px;
 }
 #heading {
-  color: #2967a9;
+  color: #1e7fe7;
   font-family: Michroma, sans-serif;
   font-weight:900;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
@@ -294,7 +294,7 @@ h2,
   margin-top: 10px;
 }
 #heading2 {
-  color: #2967a9;
+  color: #1e7fe7;
   font-family: Michroma, sans-serif;
   font-weight:900;
   text-shadow: 0px 0px 0 rgb(-8, 112, 240), 0px 1px 0 rgb(-23, 97, 225),
@@ -363,7 +363,7 @@ h2,
 }
 .item:hover {
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
-  border: solid 1.3px gray;
+  border: solid 1.5px gray;
 }
 @keyframes color-change-3x {
   0% {
