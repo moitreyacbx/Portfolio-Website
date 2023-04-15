@@ -59,7 +59,7 @@ function changemodedark() {
 }
 function changemodelight() {
   const el1 = document.querySelector(".title");
-  el1.style.color = "#2a5889";
+  el1.style.color = "#1e7fe7";
   const el2 = document.querySelector("body");
   el2.style.backgroundImage =
     "url(https://imgs.search.brave.com/l0ixk8510o01PVwf6p_vemhQ1Xrtl8ylBOmUdnkZ32k/rs:fit:550:250:1/g:ce/aHR0cHM6Ly93d3cu/ZGVzaWduYm9sdHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDEyLzEyL05vaXN5/LUdyaWQtU2VhbWxl/c3MtUGF0dGVybi1G/b3ItV2Vic2l0ZS1C/YWNrZ3JvdW5kLmpw/Zw)";
@@ -72,14 +72,14 @@ function changemodelight() {
   const el6 = document.querySelector(".moitreyatext");
   el6.style.color = "#172C5D";
   const el7 = document.querySelector("#heading");
-  el7.style.color = "#2a5889";
+  el7.style.color = "#1e7fe7";
   const el8 = document.querySelector("#Message");
   el8.style.color = "black";
   el8.style.textShadow = "none";
   const el9 = document.querySelector(".Moitreyaimg");
   el9.style.borderColor = "black";
   const el10 = document.querySelector("#heading2");
-  el10.style.color = "#2a5889";
+  el10.style.color = "#1e7fe7";
   const el11 = document.querySelector(".marveltext");
   el11.style.color = "#172C5D";
   const el13 = document.querySelector(".Message3");
@@ -185,4 +185,5 @@ ref.classList.add("topheading");
 ref.style.justifyContent = "center";
 ref.style.fontSize = "26px";
 ref.innerHTML = "Click to display";
+ref.style.bottom = "10px";
 /*End*/
