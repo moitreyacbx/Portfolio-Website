@@ -154,7 +154,7 @@ level.classList.add("topheading");
 level.style.justifyContent = "center";
 level.innerHTML = "Skill Level :<br>  Hover to Display";
 level.style.fontSize = "26px";
-level.style.top = "15px";
+level.style.top = "18px";
 level.style.backgroundColor = "whitesmoke";
 leveladvanced = () => {
   level.innerHTML = "Skill Level :<br> Advanced";
@@ -174,7 +174,7 @@ ref.classList.add("topheading");
 ref.style.justifyContent = "center";
 ref.style.fontSize = "26px";
 ref.innerHTML = "Click to display";
-ref.style.top = "10px";
+ref.style.top = "15px";
 ref.style.textSpacing = "100px";
 (() => {
   //If you want to add more images, add the link name and URL image URL in the array list below.
@@ -198,7 +198,7 @@ ref.style.textSpacing = "100px";
       "link": "cert7.html"
   },
   {
-      "url": "WhatsApp Image 2023-03-24 at 19.34.32 - Copy.jpg",
+      "url": "WhatsApp Image 2023-03-24 at 19.34.32.jpg",
       "alt": "",
       "name": "Physics Seminar",
       "link": "cert4.html"

@@ -905,7 +905,7 @@ a {
     float: none;
     position: relative;
     left: 8.3rem;
-    top: 3rem;
+    top: 2rem;
   }
   #buttons {
     width: 10rem;
@@ -935,7 +935,6 @@ a {
     width: 31.7rem;
     font-weight: 900;
     font-size: 40px !important;
-    margin-bottom: 20px !important;
   }
   .center{
     width: 31.7rem;
