@@ -14,6 +14,10 @@ body {
   position: relative;
   bottom: 40px;
 }
+.center{
+  display: flex;
+  justify-content: center;
+}
 h1 {
   font-family: "Arial Black", Gadget;
   font-size: 35px;
@@ -451,51 +455,17 @@ a {
   position: relative;
   font-stretch: extra-expanded;
 }
-.ceritem-container {
+#ceritem-container {
   background-color: rgb(255, 255, 255);
-  display: grid;
-  grid-template-areas:
-    "resume resume cert1 cert2 cert5 cert5 "
-    "resume resume cert3 cert4 cert5 cert5";
-}
-.grid-1 {
-  grid-area: resume;
-  justify-content: stretch;
-}
-.grid-2 {
-  grid-area: cert1;
-}
-.grid-3 {
-  grid-area: cert2;
-}
-.grid-4 {
-  grid-area: cert3;
-}
-.grid-5 {
-  grid-area: cert4;
-}
-.grid-6 {
-  grid-area: cert5;
-}
-.ceritem {
-  padding: 2px 5px 2px 5px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  width: 38rem;
 }
 .ceritem:hover {
   background-color: #26aedc;
   animation: shadow-pop-tr 0.5s ease-in-out forwards;
-}
-.img5 {
-  width: 100%;
-  height: 200px;
-  position: relative;
-  top: 5px;
-  border-radius: 5px;
-}
-.img6 {
-  width: 100%;
-  height: 420px;
-  border-radius: 7px;
 }
 .contbutt {
   display: flex;
@@ -503,6 +473,111 @@ a {
   position: relative;
   bottom: 15px;
 }
+#hcg-slider-1 .hcg-slide-container {
+	width: 700px;
+	height: 400px;
+}
+.hcg-slider-body {
+	height: 100%;
+	width: 100%;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	width: 100%;
+	height: 100%;
+	display: none;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 90%;
+	display: inline-block;
+  background-image: url(https://imgs.search.brave.com/KLTCyFIlGGtt-UkXw_6utMmn82mIA__W8VNGmyvzFD8/rs:fit:612:407:1/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vcGhvdG9z/L21ldGFsLXRleHR1/cmUtYmFja2dyb3Vu/ZC1waWN0dXJlLWlk/NTE2MjgwODM4P2s9/NiZtPTUxNjI4MDgz/OCZzPTYxMng2MTIm/dz0wJmg9R3NhNzJF/YTV6aUZ3MzZqeGpf/X0xRTktnYmduWlRr/a0xfelZJa0lmVzFn/bz0);
+  padding: 10px 10px 10px 10px;
+}
+.hcg-slides img:hover{
+  animation: shadow-pop-tr 0.5s ease-in-out forwards;
+  border: solid 1.5px gray;
+  background-image: none;
+  background-color: #47cefb;
+}
+.hcg-slide-text {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 3px 5px;
+	position: absolute;
+	bottom: 0;
+	border-radius: 5px;
+	left: 50%;
+	text-align: center;
+	text-shadow: 0 0 2px #000;
+	background-color: rgba(255,255,255,0.30);
+	display: inline-block;
+	transform: translate(-50%, -5px);
+}
+.hcg-slide-dot-control {
+	margin-top: 10px;
+	text-align: center;
+}
+.hcg-slide-dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+	background-color: #717171;
+}
+.hcg-slide-number {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 4px 7px;
+	position: absolute;
+	border-radius: 5px;
+	top: 5px;
+	left: 5px;
+	background-color: rgba(255,255,255,0.30);
+}
+.animated { 
+	animation-name: flipInY; 
+	animation-duration: 1.2s;
+  animation-timing-function: ease-in;
+}
+@keyframes flipInY {
+	0% {
+		transform: perspective(400px) rotateY(90deg);
+		opacity: 0;
+	}
+	40% {
+		transform: perspective(400px) rotateY(-10deg);
+	}
+	70% {
+		transform: perspective(400px) rotateY(10deg);
+	}
+	100% {
+		transform: perspective(400px) rotateY(0deg);
+		opacity: 1;
+	}
+}
+.flipInY {
+	backface-visibility: visible !important;
+	animation-name: flipInY;
+}
+
 #buttons-1 {
   width: 150px;
   background-color: silver;
@@ -525,9 +600,6 @@ a {
 }
 .circular {
   border-radius: 100rem;
-}
-.coolbackground {
-  background-image: url(https://imgs.search.brave.com/KLTCyFIlGGtt-UkXw_6utMmn82mIA__W8VNGmyvzFD8/rs:fit:612:407:1/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vcGhvdG9z/L21ldGFsLXRleHR1/cmUtYmFja2dyb3Vu/ZC1waWN0dXJlLWlk/NTE2MjgwODM4P2s9/NiZtPTUxNjI4MDgz/OCZzPTYxMng2MTIm/dz0wJmg9R3NhNzJF/YTV6aUZ3MzZqeGpf/X0xRTktnYmduWlRr/a0xfelZJa0lmVzFn/bz0);
 }
 #cssmenu {
   width: auto;
@@ -743,7 +815,7 @@ a {
     animation: none !important;
   }
 }
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 500px) {
   .title {
     width: 32rem;
     font-size: 62px;
@@ -864,5 +936,12 @@ a {
     font-weight: 900;
     font-size: 40px !important;
     margin-bottom: 20px !important;
+  }
+  .center{
+    width: 31.7rem;
+  }
+  #hcg-slider-1 .hcg-slide-container {
+    width: 31.7rem;
+    height: 400px;
   }
 }

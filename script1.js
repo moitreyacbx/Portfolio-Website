@@ -1,5 +1,4 @@
-const gridback = document.querySelectorAll(".ceritem-container");
-gridback[0].classList.add("coolbackground");
+
 const but = document.querySelectorAll("button");
 but[2].addEventListener("click", disptext);
 for (let i = 0; i < but.length - 1; i++) {
@@ -51,8 +50,6 @@ function changemodedark() {
   el13.style.textShadow = "1px 1px 2px black";
   const el14 = document.querySelector(".Marvelbeatbox");
   el14.style.border = "solid 3px whitesmoke";
-  const el15 = document.querySelector(".ceritem-container");
-  el15.style.backgroundColor = "white";
   const el16 = document.querySelector(".footer");
   el16.style.backgroundColor = "seashell";
   el16.style.color = "#242b3a";
@@ -87,8 +84,6 @@ function changemodelight() {
   el13.style.textShadow = "none";
   const el14 = document.querySelector(".Marvelbeatbox");
   el14.style.border = "solid 3px black";
-  const el15 = document.querySelector(".ceritem-container");
-  el15.style.backgroundColor = "rgb(37, 35, 35)";
   const el16 = document.querySelector(".footer");
   el16.style.backgroundColor = "#242b3a";
   el16.style.color = "white";
@@ -122,12 +117,6 @@ szch2.style.top = "1rem";
 szch2.style.left = "1rem";
 szch2.style.fontStyle = "normal";
 szch.style.fontStyle = "normal";
-const nudge = document.querySelector(".img6");
-nudge.style.padding = "2px 0px 0px 0px";
-const nudge1 = document.querySelector(".ceritem-container");
-nudge1.style.padding = "10px 5px 7px 5px";
-const cerupdt = document.querySelectorAll(".img5");
-cerupdt[3].src = "Screenshot (5).png";
 const container1 = document.querySelector(".contain");
 container1.style.display = "flex";
 container1.style.justifyContent = "center";
@@ -185,5 +174,103 @@ ref.classList.add("topheading");
 ref.style.justifyContent = "center";
 ref.style.fontSize = "26px";
 ref.innerHTML = "Click to display";
-ref.style.bottom = "10px";
+ref.style.top = "10px";
+ref.style.textSpacing = "100px";
+(() => {
+  //If you want to add more images, add the link name and URL image URL in the array list below.
+    const images_list = [
+  {
+      "url": "Screenshot (1).png",
+      "alt": "",
+      "name": "Resume",
+      "link": "cert1.html"
+  },
+  {
+      "url": "Moitreya Chattopadhyay _page-0001.jpg",
+      "alt": "",
+      "name": "Microsoft Learn",
+      "link": "cert2.html"
+  },
+  {
+      "url": "Screenshot (7).png",
+      "alt": "",
+      "name": "Mimo Web",
+      "link": "cert7.html"
+  },
+  {
+      "url": "WhatsApp Image 2023-03-24 at 19.34.32 - Copy.jpg",
+      "alt": "",
+      "name": "Physics Seminar",
+      "link": "cert4.html"
+  },
+  {
+      "url": "1681133872320.jpeg",
+      "alt": "",
+      "name": "Mimo SQL",
+      "link": "cert6.html"
+  },
+  {
+      "url": "Screenshot (4).png",
+      "alt": "",
+      "name": "Internshala Python",
+      "link": "cert3.html"
+  },
+  {
+      "url": "Screenshot (5).png",
+      "alt": "",
+      "name": "Open Weaver Web",
+      "link": "cert5.html"
+  }
+    ];
+  
+    let slider_id = document.querySelector("#hcg-slider-1");
+    let dots_div = "";
+    let images_div = "";
+    for (let i = 0; i < images_list.length; i++) {
+      let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+      images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+              '<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+              '<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+             '</a>';
+      dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+    }
+    slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+    slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+  
+    let slide_index = 0;
+  
+    const images = slider_id.querySelectorAll(".hcg-slides");
+    const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+    const showSlides = () => {
+      if (slide_index > images.length-1) {
+        slide_index = 0;
+      }
+      if (slide_index < 0) {
+        slide_index = images.length-1;
+      }
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+        dots[i].classList.remove("dot-active");
+        if (i == slide_index) {
+          images[i].style.display = "flex";
+          dots[i].classList.add("dot-active");
+        }
+      }
+    }
+  
+    const dot_click = event => {
+      event.preventDefault();
+      slide_index = event.target.dataset.id;
+      showSlides();
+    }
+  
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].addEventListener("click", dot_click, false);
+    }
+    setInterval(() => {
+      slide_index++;
+      showSlides();
+    }, 3000);
+  
+  })();
 /*End*/
