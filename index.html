@@ -143,14 +143,16 @@
       </p>
     </ul>
     </div>
+    <form method="post" action="/" id="my-form">
     <div id="Message">
       <p>Got A Message For Me?
-      <textarea class="MessageHolder" id="Message2" placeholder="~Write Something Here~" inputmode="full-width-latin" onclick="remove()"></textarea>
-      <input id="MessageName" placeholder="~Your Name~" inputmode="full-width-latin">
-      <button id="buttons">Submit</button>
+      <textarea name="message"class="MessageHolder" id="Message2" placeholder="~Write Something Here~" inputmode="full-width-latin" onclick="remove()"></textarea>
+      <input name="name" id="MessageName" placeholder="~Your Name~" inputmode="full-width-latin">
+      <button id="buttons" type ="submit">Submit</button>
       <br>
       <p id="prompt"></p>
     </div>
+  </form>
     <div>
       <div class="footer"></div>
     <script src="script1.js">

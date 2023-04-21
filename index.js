@@ -22,8 +22,17 @@ app.post("/", (req, res) => {
     message: req.body.message,
     name: req.body.name
   });
-  newMessage.save();
-  res.redirect("/");
+  console.log(newMessage);
+  newMessage.save()
+		.then((result) => {
+			console.log(result);
+			res.status(200).json(result);
+		})
+		.catch((error) => {
+			console.error(error);
+			res.status(500).send('Error saving message to database.');
+		});
+    res.redirect('/');
 });
 app.listen(3000, () => {
   console.log("listening on port 3000 http://localhost:3000");
