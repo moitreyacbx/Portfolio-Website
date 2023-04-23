@@ -1,21 +1,22 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
+const cors = require("cors");
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors({ origin: "http://localhost:3000" }));
+app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
   "mongodb+srv://moichat15:capitapiz@cluster0.1ax10zj.mongodb.net/Portfolio",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
-const schema = {
-  message: "string",
-  name: "string",
-};
+const messageSchema = new mongoose.Schema({
+  message: String,
+  name: String,
+});
 
-const Message = mongoose.model("Message", schema);
+const Message = mongoose.model("Message", messageSchema);
 
 app.use(express.static(__dirname));
 
