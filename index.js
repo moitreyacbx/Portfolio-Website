@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose.connect(
-  "mongodb+srv://Moitreya:capitapiz@cluster0.ag0bxo7.mongodb.net/Portfolio",
+  "mongodb+srv://moichat15:capitapiz@cluster0.1ax10zj.mongodb.net/Portfolio",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
