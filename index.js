@@ -28,13 +28,9 @@ app.post("/", (req, res) => {
     message: req.body.message,
     name: req.body.name
   });
-  
-  console.log(newMessage);
-  
   newMessage.save()
-		.then((result) => {
-			console.log(result);
-			res.status(200).json(result);
+		.then(() => {
+			res.status(200).redirect('/');
 		})
 		.catch((error) => {
 			console.error(error);
