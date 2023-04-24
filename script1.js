@@ -1,23 +1,4 @@
-const form = document.querySelector('#MessageName');
 
-form.addEventListener('submit', async (event) => {
-  event.preventDefault();
-  const formData = new FormData(form);
-
-  try {
-    const response = await fetch('/', {
-      method: 'POST',
-      body: formData
-    });
-
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-    }
-  } catch (error) {
-    console.error(error);
-  }
-});
 const but = document.querySelectorAll("button");
 but[2].addEventListener("click", disptext);
 for (let i = 0; i < but.length - 1; i++) {
