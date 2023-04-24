@@ -7,7 +7,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
-  "mongodb+srv://moichat15:capitapiz@cluster0.1ax10zj.mongodb.net/?retryWrites=true&w=majority",
+  "mongodb+srv://moichat15:capitapiz@cluster0.1ax10zj.mongodb.net/messages",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
@@ -18,7 +18,7 @@ const messageSchema = new mongoose.Schema({
 
 const Message = mongoose.model("Message", messageSchema);
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
