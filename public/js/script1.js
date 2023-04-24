@@ -183,43 +183,43 @@ ref.style.textSpacing = "100px";
       "url": "./../images/Screenshot (1).png",
       "alt": "",
       "name": "Resume",
-      "link": "cert1.html"
+      "link": "./../html/cert1.html"
   },
   {
       "url": "./../images/Moitreya Chattopadhyay _page-0001.jpg",
       "alt": "",
       "name": "Microsoft Learn",
-      "link": "cert2.html"
+      "link": "./../html/cert2.html"
   },
   {
       "url": "./../images/Screenshot (7).png",
       "alt": "",
       "name": "Mimo Web",
-      "link": "cert7.html"
+      "link": "./../html/cert7.html"
   },
   {
       "url": "./../images/WhatsApp Image 2023-03-24 at 19.34.32.jpg",
       "alt": "",
       "name": "Physics Seminar",
-      "link": "cert4.html"
+      "link": "./../html/cert4.html"
   },
   {
       "url": "./../images/1681133872320.jpeg",
       "alt": "",
       "name": "Mimo SQL",
-      "link": "cert6.html"
+      "link": "./../html/cert6.html"
   },
   {
       "url": "./../images/Screenshot (4).png",
       "alt": "",
       "name": "Internshala Python",
-      "link": "cert3.html"
+      "link": "./../html/cert3.html"
   },
   {
       "url": "./../images/Screenshot (5).png",
       "alt": "",
       "name": "Open Weaver Web",
-      "link": "cert5.html"
+      "link": "./../html/cert5.html"
   }
     ];
   
