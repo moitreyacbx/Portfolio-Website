@@ -7,7 +7,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect(
-  "mongodb+srv://moichat15:capitapiz@cluster0.1ax10zj.mongodb.net/Portfolio",
+  "mongodb+srv://moichat15:capitapiz@cluster0.1ax10zj.mongodb.net/?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 
