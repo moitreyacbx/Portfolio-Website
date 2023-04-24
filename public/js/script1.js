@@ -180,43 +180,43 @@ ref.style.textSpacing = "100px";
   //If you want to add more images, add the link name and URL image URL in the array list below.
     const images_list = [
   {
-      "url": "Screenshot (1).png",
+      "url": "/images/Screenshot (1).png",
       "alt": "",
       "name": "Resume",
       "link": "cert1.html"
   },
   {
-      "url": "Moitreya Chattopadhyay _page-0001.jpg",
+      "url": "/images/Moitreya Chattopadhyay _page-0001.jpg",
       "alt": "",
       "name": "Microsoft Learn",
       "link": "cert2.html"
   },
   {
-      "url": "Screenshot (7).png",
+      "url": "/images/Screenshot (7).png",
       "alt": "",
       "name": "Mimo Web",
       "link": "cert7.html"
   },
   {
-      "url": "WhatsApp Image 2023-03-24 at 19.34.32.jpg",
+      "url": "/images/WhatsApp Image 2023-03-24 at 19.34.32.jpg",
       "alt": "",
       "name": "Physics Seminar",
       "link": "cert4.html"
   },
   {
-      "url": "1681133872320.jpeg",
+      "url": "/images/1681133872320.jpeg",
       "alt": "",
       "name": "Mimo SQL",
       "link": "cert6.html"
   },
   {
-      "url": "Screenshot (4).png",
+      "url": "/images/Screenshot (4).png",
       "alt": "",
       "name": "Internshala Python",
       "link": "cert3.html"
   },
   {
-      "url": "Screenshot (5).png",
+      "url": "/images/Screenshot (5).png",
       "alt": "",
       "name": "Open Weaver Web",
       "link": "cert5.html"
