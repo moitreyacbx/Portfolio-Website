@@ -18,7 +18,7 @@ const messageSchema = new mongoose.Schema({
 
 const Message = mongoose.model("Message", messageSchema);
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/index.html"));
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
