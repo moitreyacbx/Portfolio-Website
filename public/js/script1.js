@@ -225,7 +225,7 @@ ref.style.textSpacing = "100px";
       alt: "",
       name: "Javascript Career Ninja",
       link: "./../html/cert8.html",
-    },
+    }
   ];
 
   let slider_id = document.querySelector("#hcg-slider-1");
