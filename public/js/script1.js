@@ -221,7 +221,7 @@ ref.style.textSpacing = "100px";
       link: "./../html/cert5.html",
     },
     {
-      url: "./../images\67 (1).png",
+      url: "./../images/67 (1).png",
       alt: "",
       name: "Javascript Career Ninja",
       link: "./../html/cert8.html",
