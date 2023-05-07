@@ -1,4 +1,3 @@
-
 const but = document.querySelectorAll("button");
 but[2].addEventListener("click", disptext);
 for (let i = 0; i < but.length - 1; i++) {
@@ -178,99 +177,121 @@ ref.style.top = "15px";
 ref.style.textSpacing = "100px";
 (() => {
   //If you want to add more images, add the link name and URL image URL in the array list below.
-    const images_list = [
-  {
-      "url": "./../images/Screenshot (1).png",
-      "alt": "",
-      "name": "Resume",
-      "link": "./../html/cert1.html"
-  },
-  {
-      "url": "./../images/Moitreya Chattopadhyay _page-0001.jpg",
-      "alt": "",
-      "name": "Microsoft Learn",
-      "link": "./../html/cert2.html"
-  },
-  {
-      "url": "./../images/Screenshot (7).png",
-      "alt": "",
-      "name": "Mimo Web",
-      "link": "./../html/cert7.html"
-  },
-  {
-      "url": "./../images/WhatsApp Image 2023-03-24 at 19.34.32.jpg",
-      "alt": "",
-      "name": "Physics Seminar",
-      "link": "./../html/cert4.html"
-  },
-  {
-      "url": "./../images/1681133872320.jpeg",
-      "alt": "",
-      "name": "Mimo SQL",
-      "link": "./../html/cert6.html"
-  },
-  {
-      "url": "./../images/Screenshot (4).png",
-      "alt": "",
-      "name": "Internshala Python",
-      "link": "./../html/cert3.html"
-  },
-  {
-      "url": "./../images/Screenshot (5).png",
-      "alt": "",
-      "name": "Open Weaver Web",
-      "link": "./../html/cert5.html"
+  const images_list = [
+    {
+      url: "./../images/Screenshot (1).png",
+      alt: "",
+      name: "Resume",
+      link: "./../html/cert1.html",
+    },
+    {
+      url: "./../images/Moitreya Chattopadhyay _page-0001.jpg",
+      alt: "",
+      name: "Microsoft Learn",
+      link: "./../html/cert2.html",
+    },
+    {
+      url: "./../images/Screenshot (7).png",
+      alt: "",
+      name: "Mimo Web",
+      link: "./../html/cert7.html",
+    },
+    {
+      url: "./../images/WhatsApp Image 2023-03-24 at 19.34.32.jpg",
+      alt: "",
+      name: "Physics Seminar",
+      link: "./../html/cert4.html",
+    },
+    {
+      url: "./../images/1681133872320.jpeg",
+      alt: "",
+      name: "Mimo SQL",
+      link: "./../html/cert6.html",
+    },
+    {
+      url: "./../images/Screenshot (4).png",
+      alt: "",
+      name: "Internshala Python",
+      link: "./../html/cert3.html",
+    },
+    {
+      url: "./../images/Screenshot (5).png",
+      alt: "",
+      name: "Open Weaver Web",
+      link: "./../html/cert5.html",
+    },
+    {
+      url: "./../images\67 (1).png",
+      alt: "",
+      name: "Javascript Career Ninja",
+      link: "./../html/cert8.html",
+    },
+  ];
+
+  let slider_id = document.querySelector("#hcg-slider-1");
+  let dots_div = "";
+  let images_div = "";
+  for (let i = 0; i < images_list.length; i++) {
+    let href =
+      images_list[i].link == "" ? "" : ' href="' + images_list[i].link + '"';
+    images_div +=
+      "<a" +
+      href +
+      ' class="hcg-slides animated"' +
+      (i === 0 ? ' style="display:flex"' : "") +
+      ">" +
+      '<img src="' +
+      images_list[i].url +
+      '" alt="' +
+      images_list[i].name +
+      '">' +
+      '<span class="hcg-slide-text">' +
+      images_list[i].name +
+      "</span>" +
+      "</a>";
+    dots_div +=
+      '<a href="#" class="hcg-slide-dot' +
+      (i === 0 ? " dot-active" : "") +
+      '" data-id="' +
+      i +
+      '"></a>';
   }
-    ];
-  
-    let slider_id = document.querySelector("#hcg-slider-1");
-    let dots_div = "";
-    let images_div = "";
-    for (let i = 0; i < images_list.length; i++) {
-      let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
-      images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:flex"':'')+'>'+
-              '<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
-              '<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
-             '</a>';
-      dots_div += '<a href="#" class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></a>';
+  slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+  slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+  let slide_index = 0;
+
+  const images = slider_id.querySelectorAll(".hcg-slides");
+  const dots = slider_id.querySelectorAll(".hcg-slide-dot");
+  const showSlides = () => {
+    if (slide_index > images.length - 1) {
+      slide_index = 0;
     }
-    slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
-    slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
-  
-    let slide_index = 0;
-  
-    const images = slider_id.querySelectorAll(".hcg-slides");
-    const dots = slider_id.querySelectorAll(".hcg-slide-dot");
-    const showSlides = () => {
-      if (slide_index > images.length-1) {
-        slide_index = 0;
-      }
-      if (slide_index < 0) {
-        slide_index = images.length-1;
-      }
-      for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-        dots[i].classList.remove("dot-active");
-        if (i == slide_index) {
-          images[i].style.display = "flex";
-          dots[i].classList.add("dot-active");
-        }
+    if (slide_index < 0) {
+      slide_index = images.length - 1;
+    }
+    for (let i = 0; i < images.length; i++) {
+      images[i].style.display = "none";
+      dots[i].classList.remove("dot-active");
+      if (i == slide_index) {
+        images[i].style.display = "flex";
+        dots[i].classList.add("dot-active");
       }
     }
-  
-    const dot_click = event => {
-      event.preventDefault();
-      slide_index = event.target.dataset.id;
-      showSlides();
-    }
-  
-    for (let i = 0; i < dots.length; i++) {
-      dots[i].addEventListener("click", dot_click, false);
-    }
-    setInterval(() => {
-      slide_index++;
-      showSlides();
-    }, 3000);
-  
-  })();
+  };
+
+  const dot_click = (event) => {
+    event.preventDefault();
+    slide_index = event.target.dataset.id;
+    showSlides();
+  };
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener("click", dot_click, false);
+  }
+  setInterval(() => {
+    slide_index++;
+    showSlides();
+  }, 3000);
+})();
 /*End*/
